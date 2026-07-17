@@ -2,6 +2,8 @@
 
 ## Status atual
 
+Registro da sessao de 2026-07-17: pasta de pesquisas eleitorais nacionais adicionada ao repositorio para sincronizacao com o GitHub.
+
 Registro da sessao de 2026-07-17: reorganizacao local sincronizada com o repositorio GitHub; commit de sincronizacao pendente de envio.
 
 A base operacional foi corrigida e está aprovada no escopo dos dados tabulares oriundos dos 23 PDFs aproveitados. Foram reconciliadas 1.738 linhas — 431 em `Lula3` e 1.307 em `Confrontos` — sem divergência conhecida após reabrir o XLSX. A entrega atual está em `ENTREGA_FINAL/`; o pipeline estatístico ainda não foi implementado neste diretório (verificação em 2026-07-17).
