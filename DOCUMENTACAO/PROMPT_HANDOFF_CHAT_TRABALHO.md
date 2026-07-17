@@ -17,7 +17,7 @@ Depois, inspecione integralmente o repositório legado, arquivos de orientação
 
 Antes de qualquer alteração, localize e inspecione `input_agregador.xlsx` e `input_eleicao_2022.xlsx`/`input_eleicao2022.xlsx`. A inspeção é estritamente somente leitura: não edite, recalcule, salve, corrija, reformate, renomeie, mova ou sobrescreva os originais. Registre os hashes antes de abrir. Se a ferramenta puder alterar o arquivo, use uma cópia descartável.
 
-Mapeie abas, colunas, fórmulas, referências, trackings, votos totais/válidos, pesos, rankings e inconsistências. Entregue um diagnóstico factual e uma matriz completa `origem → destino`. Compare os achados com `Base_nova_limpa.xlsx`, que já possui `Lula3` e uma única aba `Confrontos`, reúne todos os adversários e remove repetições artificiais semana→dia. A versão entregue em 15/07/2026 contém 56 aberturas de Lula3 e, em `Confrontos`, 371 linhas de segundo turno e 157 de primeiro turno, das quais 11 são espontâneas classificadas como parciais/baixo risco. Preserve faixas e geografias publicadas, sem transformar recortes ou adversários do mesmo cenário em pesquisas independentes. A dimensão `Religiao` está pronta, ainda sem observações porque a fonte recebida não publicou esses percentuais. Não recrie dados diários como input; a série diária será output do motor.
+Mapeie abas, colunas, fórmulas, referências, trackings, votos totais/válidos, pesos, rankings e inconsistências. Entregue um diagnóstico factual e uma matriz completa `origem → destino`. Compare os achados com `Base_nova_limpa.xlsx`, que já possui `Lula3` e uma única aba `Confrontos`, reúne todos os adversários e remove repetições artificiais semana→dia. A versão entregue em 17/07/2026 contém 1.845 linhas em `Lula3` e 1.807 em `Confrontos`; o escopo diretamente revalidado contra 23 PDFs soma 1.738 linhas, sendo 431 de avaliação e 1.307 de confrontos. Em `Confrontos`, primeiro e segundo turnos, espontânea e estimulada, sexo e religião já aparecem em colunas e linhas próprias. Preserve faixas e geografias publicadas, sem transformar recortes ou adversários do mesmo cenário em pesquisas independentes. Não recrie dados diários como input; a série diária será output do motor.
 
 ## Regras operacionais obrigatórias
 
@@ -30,6 +30,15 @@ Mapeie abas, colunas, fórmulas, referências, trackings, votos totais/válidos,
 - Uma linha representa uma pesquisa ou onda efetivamente publicada. Não replique tracking semanal em sete linhas.
 - Não exclua uma pesquisa apenas por ser ruim, nova ou discrepante. Exclua apenas por regra objetiva documentada.
 - Mantenha o projeto enxuto: poucos módulos com responsabilidades claras, sem versões paralelas, cópias desnecessárias ou arquivos auxiliares permanentes.
+
+### Protocolo obrigatório para extração e revisão de PDFs
+
+- Antes de extrair valores, faça um censo integral de todas as tabelas e aberturas publicadas. Não trabalhe com lista restrita de páginas ou segmentos prioritários.
+- Monte um contrato de cobertura por `PDF × onda × cenário × adversário`: conte todas as linhas esperadas e só libere a base quando `esperado = exportado`. Categoria válida sem taxonomia própria entra em `Outro`; nunca é descartada.
+- Leia candidatos e respostas pelo cabeçalho semântico publicado. Some literalmente as categorias; nunca use residual para forçar 100% e nunca dependa da posição fixa das colunas.
+- Preserve célula publicada em branco como nula; não converta branco em zero. Preencha `amostra_segmento` apenas quando o recorte for explicitamente publicado; não copie `amostra_total` para região ou segmento.
+- Faça duas extrações independentes e revisão visual dirigida a cabeçalhos, rótulos quebrados pelo OCR, brancos, zeros e mudanças de layout. Divergência entre leituras exige retorno à página do PDF.
+- Depois de salvar, reabra o XLSX, reconcilie novamente todas as linhas e células, verifique datas crescentes, erros de fórmula, filtros e linhas ocultas. A entrega deve abrir com as abas operacionais visíveis e utilizáveis.
 
 ## Escalabilidade de candidato, geografia e segmento
 

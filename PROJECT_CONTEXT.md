@@ -15,13 +15,12 @@ O projeto reconstrói o agregador interno de pesquisas políticas para tornar a 
 
 ### Estado atual
 
-- `Base_nova.xlsx` e `2nd_round_lula_vs_renan_santos-140720261102.xlsx`: fontes locais preservadas no diretório (`rg --files` em 2026-07-16).
-- `outputs/019f62ff-04df-7cd2-8754-a00774c248dd/Base_nova_limpa.xlsx`: base operacional consolidada com as abas `Lula3`, `Confrontos`, `Institutos`, `Controle`, `Instrucoes` e `Auditoria` (arquivo XLSX analisado em 2026-07-16).
-- `outputs/019f62ff-04df-7cd2-8754-a00774c248dd/Pacote_Agregador_Kinea.zip`: pacote final com a base e os quatro documentos de handoff (arquivo ZIP analisado em 2026-07-16).
-- `outputs/019f6b82-269f-7810-bd1c-76fd20504089/auditoria_erros_extracao_pdf.xlsx`: auditoria em nível de campo com `Resumo_Acuracia`, 6.795 campos do período 2025-01-01 a 2026-07-15, log de erros, gravidade, metodologia e manifesto SHA-256 de 163 PDFs (gerado e validado em 2026-07-16).
-- `outputs/019f6b82-269f-7810-bd1c-76fd20504089/relatorio_revisao_acuracia_extracao_original.docx`: relatório final com metodologia, tabela completa de acurácia, interpretação, pendências e regras preventivas (cinco páginas renderizadas e revisadas em 2026-07-16).
-- Quatro documentos definem visão, especificação, metodologia e execução no ambiente corporativo (`ROTEIRO_NOVO_AGREGADOR.md`, `ESPECIFICACAO_MESTRE_IMPLEMENTACAO.md`, `ESTUDO_METODOLOGICO_AGREGADOR.md`, `PROMPT_HANDOFF_CHAT_TRABALHO.md`).
-- Pipeline, CLI, testes, configuração e README ainda não existem neste diretório (`rg --files` em 2026-07-16).
+- `ENTREGA_FINAL/Base_nova_limpa.xlsx`: base operacional consolidada com as abas `Lula3`, `Confrontos`, `Institutos`, `Controle`, `Instrucoes` e `Auditoria`, revalidada em 2026-07-17.
+- `ENTREGA_FINAL/Pacote_Agregador_Kinea.zip`: pacote final com a base e os quatro documentos de handoff atualizados.
+- `DOCUMENTACAO/`: contém roteiro, especificação, estudo metodológico e prompt para o chat do trabalho.
+- `ARQUIVOS_ANTIGOS/auditoria_preliminar_2026-07-16/`: preserva a primeira auditoria e seu relatório apenas como histórico; não são artefatos operacionais.
+- `README.md`: mapa simples da pasta e indicação inequívoca dos arquivos atuais.
+- Pipeline, CLI, testes e configuração ainda não existem neste diretório (`rg --files` em 2026-07-17).
 
 ### Arquitetura-alvo
 
@@ -42,11 +41,14 @@ O projeto reconstrói o agregador interno de pesquisas políticas para tornar a 
 - 2026-07-15 — Modelo A reproduz o legado; Modelo B melhora a abordagem; Modelo C é challenger temporal (`ESTUDO_METODOLOGICO_AGREGADOR.md`).
 - 2026-07-15 — A probabilidade inicial mede liderança atual, não vitória no dia da eleição (`ESTUDO_METODOLOGICO_AGREGADOR.md`).
 - 2026-07-15 — A base limpa evita repetição artificial semanal → diária como input; uma onda publicada é uma observação (`PROMPT_HANDOFF_CHAT_TRABALHO.md`).
-- 2026-07-15 — Datas das abas operacionais usam `aaaa-mm-dd` e estão ordenadas do mais antigo ao mais novo (`outputs/019f62ff-04df-7cd2-8754-a00774c248dd/Base_nova_limpa.xlsx`).
+- 2026-07-15 — Datas das abas operacionais usam `aaaa-mm-dd` e estão ordenadas do mais antigo ao mais novo (`ENTREGA_FINAL/Base_nova_limpa.xlsx`).
 - 2026-07-16 — A primeira auditoria de acurácia classificou ausência de vínculo linha→página como erro do dado. Esse critério mede rastreabilidade, não acurácia numérica; portanto, o resultado de 0,52% não deve ser usado como estimativa de qualidade da base e foi superado pela reextração direta.
-- 2026-07-16 — Os 23 PDFs que alimentaram a base foram reextraídos de forma independente em 109 páginas tabulares. O escopo final reconciliado contém 1.302 linhas: 318 em `Lula3` e 984 em `Confrontos`, sem omissão, duplicata semântica, divergência numérica ou de metadado (`Base_nova_limpa.xlsx`; validação local em 2026-07-16).
-- 2026-07-16 — Causas dos erros corrigidos: deduplicação por rótulo literal; metadado associado por instituto/mês em vez da onda; leitura por posição fixa após mudança de layout da Nexus; filtro que emitia somente um adversário; e uso de residual para forçar 100%.
-- 2026-07-16 — Regra preventiva: interpretar cabeçalhos, vincular metadados à onda/PDF, expandir todos os adversários publicados, deduplicar por chave semântica e reconciliar `esperado × exportado` antes da liberação. Somar categorias publicadas e preservar diferenças de arredondamento; nunca forçar 100% por residual.
+- 2026-07-16 — A primeira reextração dos 23 PDFs reconciliou somente 1.302 linhas e foi posteriormente considerada incompleta: a seleção por aberturas prioritárias deixou tabelas válidas fora do censo. O resultado foi superado pela revisão integral de 2026-07-17.
+- 2026-07-17 — Os 23 PDFs aproveitados foram reextraídos integralmente, tabela por tabela. O contrato de cobertura final contém 1.738 linhas: 431 em `Lula3` e 1.307 em `Confrontos`; o XLSX reaberto apresentou 1.738/1.738 linhas, zero divergências célula a célula e zero erros de fórmula.
+- 2026-07-17 — Foram recuperadas 422 linhas omitidas (72 Ipec, 41 PoderData, 245 Nexus e 64 Paraná Pesquisas), corrigidos 9 resultados com diferença de 0,1 p.p., 8 campos de amostra e 13 rótulos. Duas células publicadas explicitamente em branco foram preservadas como nulas.
+- 2026-07-17 — Causas-raiz: lista restrita de segmentos prioritários; residual para forçar 100%; rótulos fragmentados pelo OCR; cópia da amostra total para recortes regionais; e filtro salvo que ocultava 1.356 linhas de `Confrontos`.
+- 2026-07-17 — Regra preventiva: censo integral antes da extração, contrato de cobertura por PDF/onda/cenário/adversário, fallback obrigatório em `Outro`, soma literal por cabeçalhos sem residual, nulos explícitos, amostra do recorte somente quando publicada, dupla leitura com revisão visual e reconciliação após reabrir o XLSX.
+- 2026-07-17 — Organização permanente: entrega atual em `ENTREGA_FINAL/`, documentos em `DOCUMENTACAO/`, histórico em `ARQUIVOS_ANTIGOS/` e proibição de pastas permanentes com UUID ou identificador opaco.
 
 ## Convenções e padrões
 
@@ -73,18 +75,18 @@ O projeto reconstrói o agregador interno de pesquisas políticas para tornar a 
 - House effect, precisão e transparência são dimensões distintas; não condensar tudo em nota opaca (`ESTUDO_METODOLOGICO_AGREGADOR.md`).
 - Probabilidades por recorte exigem gates mínimos de cobertura e piso de incerteza (`PROMPT_HANDOFF_CHAT_TRABALHO.md`).
 - Dados e caminhos corporativos podem ser confidenciais; não incluí-los em Git ou compartilhamentos não autorizados (`ROTEIRO_NOVO_AGREGADOR.md`).
-- O escopo diretamente revalidado cobre os dados tabulares inseridos a partir dos 23 PDFs aproveitados. Totais e séries legadas que não vieram desses PDFs continuam sujeitos à homologação corporativa separada; isso não invalida o escopo PDF já reconciliado.
+- O escopo diretamente revalidado cobre 1.738 linhas tabulares inseridas a partir dos 23 PDFs aproveitados. Totais e séries legadas que não vieram desses PDFs continuam sujeitos à homologação corporativa separada; isso não invalida o escopo PDF já reconciliado.
 
 ## Backlog priorizado de próximos passos
 
 1. No ambiente corporativo, inspecionar em modo somente leitura o repositório legado, `input_agregador` e `input_eleicao2022`; registrar hashes, diagnóstico e matriz origem → destino (`PROMPT_HANDOFF_CHAT_TRABALHO.md`).
 2. Recuperar a fórmula canônica, parâmetros, definição de data e golden files do legado (`ESPECIFICACAO_MESTRE_IMPLEMENTACAO.md`).
 3. Validar com a chefia as decisões metodológicas pendentes e os critérios de homologação (`ESTUDO_METODOLOGICO_AGREGADOR.md`).
-4. Criar README, projeto Python, configuração única, ingestão e validações com testes (`ESPECIFICACAO_MESTRE_IMPLEMENTACAO.md`).
+4. Criar o projeto Python, configuração única, ingestão e validações com testes (`ESPECIFICACAO_MESTRE_IMPLEMENTACAO.md`).
 5. Implementar e comparar o Modelo A com o legado antes de qualquer melhoria oficial (`ESPECIFICACAO_MESTRE_IMPLEMENTACAO.md`).
 6. Gerar memória de pesos, gráficos e tabelas normalizadas; validar novo adversário e recortes (`ESPECIFICACAO_MESTRE_IMPLEMENTACAO.md`).
 7. Confirmar o ambiente Databricks e publicar contratos Bronze/Silver/Gold (`ESPECIFICACAO_MESTRE_IMPLEMENTACAO.md`).
 8. Validar separadamente, no ambiente corporativo, as séries legadas fora do escopo dos 23 PDFs reextraídos.
 9. Implementar Modelo B e, somente depois, challenger C com backtest walk-forward (`ESTUDO_METODOLOGICO_AGREGADOR.md`).
 
-Última atualização: 2026-07-16 — inclui reextração independente dos 23 PDFs aproveitados, correção da base e regras preventivas de extração.
+Última atualização: 2026-07-17 — inclui censo integral dos 23 PDFs, reconciliação de 1.738 linhas, organização intuitiva da pasta e proibição de diretórios opacos.

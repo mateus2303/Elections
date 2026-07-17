@@ -144,7 +144,7 @@ As dimensões são:
 - `segmento_tipo`: `Total`, `Idade`, `Sexo`, `Escolaridade`, `Renda`, `Religiao`, `Outro`;
 - `segmento`: categoria publicada, como `Total` ou `16-24`.
 
-O núcleo legado inicial era integralmente `Brasil / Brasil / Total / Total`. A base de referência entregue em 15/07/2026 incorpora 56 aberturas de Lula3 e, em `Confrontos`, preserva 371 linhas de segundo turno e inclui 157 linhas de primeiro turno. Dessas, 11 são espontâneas classificadas como parciais/baixo risco e exigem tratamento conservador. A dimensão `Religiao` está disponível com `Católico` e `Evangélico`, ainda sem observações porque a fonte recebida não publicou esses percentuais.
+O núcleo legado inicial era integralmente `Brasil / Brasil / Total / Total`. A base de referência entregue em 17/07/2026 contém 1.845 linhas em `Lula3` e 1.807 em `Confrontos`; destas, 1.138 são de primeiro turno, 669 de segundo turno e 57 espontâneas, mantidas separadas das estimuladas. A dimensão `Religião` já possui 185 linhas publicadas, e há 112 linhas por sexo. O escopo diretamente revalidado contra os 23 PDFs soma 1.738 linhas: 431 de avaliação e 1.307 de confrontos.
 
 #### Experiência de preenchimento obrigatória
 
@@ -462,20 +462,20 @@ Alertas não alteram valores.
 Gerar:
 
 ```text
-outputs/<run_id>/validation_issues.csv
-outputs/<run_id>/validation_report.html
+saidas/execucao_<aaaa-mm-dd_hhmm>/validation_issues.csv
+saidas/execucao_<aaaa-mm-dd_hhmm>/validation_report.html
 ```
 
 Cada item deve conter severidade, aba, linha, `poll_id` gerado, campo, mensagem e sugestão. O `poll_id` e a rastreabilidade são criados pelo pipeline a partir do arquivo lido; nunca são digitados no Excel.
 
 ---
 
-## 8. Outputs locais
+## 8. Saídas locais
 
 Estrutura obrigatória:
 
 ```text
-outputs/<run_id>/
+saidas/execucao_<aaaa-mm-dd_hhmm>/
   charts/
     lula3_otimo_ruim.png
     lula3_aprovacao.png
@@ -668,7 +668,7 @@ agregador/
     test_outputs.py
   data/
     input/.gitkeep
-  outputs/.gitkeep
+  saidas/.gitkeep
   docs/
 ```
 

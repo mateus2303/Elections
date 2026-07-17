@@ -536,7 +536,7 @@ Exemplos válidos e separados:
 - Lula × Flávio | Brasil | Idade 16–24;
 - Lula × Renan | SP | Idade 25–34.
 
-O núcleo legado nacional é classificado como `Brasil / Brasil / Total / Total`. A base de referência entregue em 15/07/2026 possui 56 aberturas de avaliação e, em `Confrontos`, 371 linhas de segundo turno e 157 de primeiro turno. Há 11 linhas espontâneas classificadas como parciais/baixo risco; elas são preservadas, mas devem receber alerta e tratamento conservador. Grafias equivalentes podem ser normalizadas, mas limites diferentes não são combinados.
+O núcleo legado nacional é classificado como `Brasil / Brasil / Total / Total`. A base de referência entregue em 17/07/2026 possui 1.845 linhas de avaliação e 1.807 de confrontos: 1.138 de primeiro turno, 669 de segundo turno e 57 espontâneas, sempre separadas das estimuladas. O escopo revalidado diretamente contra 23 PDFs contém 431 linhas de avaliação e 1.307 de confrontos. Grafias equivalentes podem ser normalizadas, mas limites diferentes não são combinados.
 
 O pipeline deve gerar um `poll_group_id` para a pesquisa/onda-mãe e um `poll_id` para cada célula. O primeiro é uma assinatura normalizada de instituto, datas disponíveis, amostra total, tipo e frequência; o segundo acrescenta produto, adversário, geografia, segmento, métrica e base de voto. Assim, o operador não preenche IDs, mas o modelo ainda reconhece que vários recortes pertencem ao mesmo levantamento. Assinaturas ambíguas devem ser sinalizadas e nunca unidas silenciosamente.
 

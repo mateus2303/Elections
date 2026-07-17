@@ -180,7 +180,7 @@ Uma linha representa uma pesquisa ou uma onda efetivamente publicada. A base lim
 - `regular_pct`;
 - `ruim_pessimo_pct`.
 
-O núcleo histórico nacional é classificado como `nivel_geografico = Brasil`, `geografia = Brasil`, `segmento_tipo = Total` e `segmento = Total`. A versão entregue em 15/07/2026 também contém 56 aberturas complementares de avaliação por região, idade, renda, sexo e escolaridade, preservando as categorias publicadas. Para linhas totais, `amostra_segmento` repete `amostra_total` quando esta estiver disponível; em recortes, só é preenchida quando divulgada. Avaliação líquida, identificador, arquivo, aba, linha de origem, médias móveis e demais campos técnicos serão derivados pelo sistema.
+O núcleo histórico nacional é classificado como `nivel_geografico = Brasil`, `geografia = Brasil`, `segmento_tipo = Total` e `segmento = Total`. A versão entregue em 17/07/2026 contém 1.845 linhas em `Lula3`; 431 delas foram revalidadas diretamente contra os 23 PDFs aproveitados, incluindo região, idade, renda, sexo, escolaridade e categorias complementares em `Outro`. Para linhas totais, `amostra_segmento` repete `amostra_total` quando esta estiver disponível; em recortes, só é preenchida quando divulgada. Avaliação líquida, identificador, arquivo, aba, linha de origem, médias móveis e demais campos técnicos serão derivados pelo sistema.
 
 ### 6.3 Aba `Confrontos`
 
@@ -208,7 +208,7 @@ Uma linha representa o resultado de Lula diante de um adversário dentro de uma 
 - `brancos_nulos_indecisos_pct`;
 - `base_voto`: `Totais` ou `Validos`.
 
-O histórico de Flávio e Renan fica unido nessa aba, preenchendo `adversario` com o nome correspondente. A versão entregue em 15/07/2026 preserva 371 linhas de segundo turno e incorpora 157 linhas de primeiro turno: 146 sem risco de aproximação e 11 espontâneas classificadas pela fonte como parciais/baixo risco. Há 16 linhas por sexo. A dimensão `Religiao` e os menus `Católico`/`Evangélico` estão prontos, mas permanecem sem percentuais porque a fonte recebida não publicou essa abertura. Não haverá `id_pesquisa`, `fonte_arquivo`, `fonte_aba`, `fonte_linha` nem `observacoes` para o operador preencher. A rastreabilidade será gerada automaticamente na leitura.
+O histórico de Flávio e Renan fica unido nessa aba, preenchendo `adversario` com o nome correspondente. A versão entregue em 17/07/2026 contém 1.807 linhas em `Confrontos`: 1.138 de primeiro turno, 669 de segundo turno e 57 espontâneas, sempre separadas das estimuladas. Há 112 linhas por sexo e 185 por religião; os demais recortes publicados também são preservados. Não haverá `id_pesquisa`, `fonte_arquivo`, `fonte_aba`, `fonte_linha` nem `observacoes` para o operador preencher. A rastreabilidade será gerada automaticamente na leitura.
 
 ### 6.4 Inclusão de novo candidato
 
