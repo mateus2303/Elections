@@ -10,7 +10,7 @@
 ## Arquivos para usar
 
 1. Para atualizar pesquisas, abra `ENTREGA_FINAL/Base_nova_limpa.xlsx`.
-2. Para transferir código e resultados ao computador do trabalho, use `ENTREGA_FINAL/Pacote_Agregador_Kinea.zip` e leve junto `ENTREGA_FINAL/Base_nova_limpa.xlsx`.
+2. Para transferir código, resultados e a base atualizada ao computador do trabalho, use `ENTREGA_FINAL/Pacote_Agregador_Kinea.zip`. A base `Base_nova_limpa.xlsx` já está dentro do ZIP.
 3. Para continuar a implementação, comece por `DOCUMENTACAO/PROMPT_HANDOFF_CHAT_TRABALHO.md`.
 
 Depois de executar o pipeline, a entrega oficial do Modelo A fica em `ENTREGA_FINAL/RESULTADOS_ATUAIS/Modelo_A_Baseline_Oficial/` e o candidato experimental em `ENTREGA_FINAL/RESULTADOS_ATUAIS/Modelo_B_Candidato_Experimental/`. Abra o workbook correspondente; os gráficos em `apresentacao/graficos/` são gerados automaticamente para todos os adversários publicados, sem alterar o código quando novos nomes forem adicionados.
