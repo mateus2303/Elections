@@ -1,0 +1,5 @@
+Resultados de apresentação gerados automaticamente.
+
+Comece por Resultados_Modelo_A.xlsx > Resumo_Executivo.
+Os gráficos em graficos/ usam nomes genéricos e são gerados para cada adversário disponível.
+Não misture votos totais com votos válidos derivados. Consulte Notas_Metodologicas antes de interpretar.

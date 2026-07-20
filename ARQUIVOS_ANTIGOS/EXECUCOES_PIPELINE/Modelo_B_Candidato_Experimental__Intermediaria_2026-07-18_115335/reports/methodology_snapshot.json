@@ -1,0 +1,79 @@
+{
+  "run_id": "run_20260718T115335-0300",
+  "created_at": "2026-07-18T11:53:35.125673-03:00",
+  "methodology_version": "model-b-candidate-0.1",
+  "input_file": "C:\\Users\\mateu\\OneDrive\\Área de Trabalho\\Resto da area de trabalho\\kinea\\agregador\\ENTREGA_FINAL\\Base_nova_limpa.xlsx",
+  "input_hash_sha256": "eccbb8ef5e1488db61754a5df9bacbe7831b2992e6448761b46da06033516e7f",
+  "header_rows": {
+    "Lula3": 4,
+    "Confrontos": 4,
+    "Institutos": 4
+  },
+  "config": {
+    "methodology_version": "model-b-candidate-0.1",
+    "input_file": "ENTREGA_FINAL/Base_nova_limpa.xlsx",
+    "outputs_dir": "saidas",
+    "sample_cap": 5000,
+    "missing_sample_fallback": 600,
+    "missing_segment_sample_fallback": 300,
+    "unknown_institute_weight": 0.5,
+    "confidence_level": 0.95,
+    "weights": {
+      "quality": 0.5,
+      "recency": 0.25,
+      "sample": 0.25
+    },
+    "windows": {
+      "government_days": 30,
+      "contest_days": 30
+    },
+    "sheets": {
+      "government": "Lula3",
+      "contests": "Confrontos",
+      "institutes": "Institutos"
+    },
+    "dimensions": {
+      "geographic_levels": [
+        "Brasil",
+        "Regiao",
+        "UF"
+      ],
+      "segment_types": [
+        "Total",
+        "Idade",
+        "Sexo",
+        "Escolaridade",
+        "Renda",
+        "Religiao",
+        "Outro"
+      ]
+    },
+    "coverage": {
+      "min_polls": 2,
+      "min_institutes": 2
+    },
+    "charting": {
+      "min_points": 20
+    },
+    "probability": {
+      "enabled": true,
+      "experimental": true,
+      "uncertainty_floor_pp": 1.5
+    },
+    "model_b": {
+      "methodology_version": "model-b-candidate-0.1",
+      "half_life_days": 15,
+      "maximum_age_days": 90,
+      "quality_prior": 0.7,
+      "quality_shrinkage": 0.5,
+      "max_institute_weight_share": 0.35,
+      "uncertainty_floor_pp": 1.5,
+      "coverage": {
+        "min_polls": 2,
+        "min_institutes": 2
+      }
+    }
+  },
+  "parquet_available": true,
+  "probability_notice": "Experimental: a incerteza total ainda não foi homologada."
+}

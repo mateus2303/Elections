@@ -1,0 +1,63 @@
+# Configuração do monitor de pesquisas eleitorais do TSE.
+# Credenciais não ficam aqui. Use .env local ou variáveis de ambiente.
+app:
+  # Ano do conjunto do TSE acompanhado pelo MVP.
+  year: 2026
+  # Fuso usado para status de hoje/amanhã e alertas.
+  timezone: America/Sao_Paulo
+
+paths:
+  # Estado mutável fora do OneDrive por padrão.
+  state_dir: "${LOCALAPPDATA}/MonitorPesquisasTSE"
+  # Pasta da planilha gerada; o arquivo profissional legado não é tocado.
+  output_dir: "ENTREGA_FINAL/MONITOR_TSE"
+  # Snapshots dos ZIPs brutos, organizados por data e execução.
+  raw_dir: "${LOCALAPPDATA}/MonitorPesquisasTSE/raw"
+  # Log técnico rotativo da aplicação.
+  log_dir: "${LOCALAPPDATA}/MonitorPesquisasTSE/logs"
+
+source:
+  # Identificador do conjunto no catálogo CKAN do TSE.
+  dataset: pesquisas-eleitorais-2026
+  # Número máximo de tentativas por download.
+  retries: 3
+  # Timeout de cada requisição, em segundos.
+  timeout_seconds: 120
+  # Proteção contra arquivo incompleto ou queda artificial de registros.
+  max_row_drop_fraction: 0.20
+  # 0 preserva snapshots indefinidamente; número positivo remove pastas antigas após sucesso.
+  raw_retention_days: 0
+  # User-Agent identificável; substitua o contato antes de uso recorrente.
+  user_agent: "MonitorPesquisasTSE/0.1 (contato a configurar)"
+
+filters:
+  # Listas vazias acompanham tudo; valores aceitam correspondência parcial textual.
+  elections: []
+  positions: []
+  geographic_levels: []
+  ufs: []
+  municipalities: []
+  institutes: []
+  contractors: []
+  publication_statuses: []
+  tags: []
+  # Datas inclusivas de registro no formato AAAA-MM-DD.
+  registration_from: null
+  registration_to: null
+
+alerts:
+  # E-mail só é enviado quando habilitado e configurado no .env/ambiente.
+  email_enabled: false
+  daily_heartbeat: false
+  # Janela futura apresentada no e-mail e no painel.
+  window_days: 7
+
+publication:
+  # Segunda fase; não confirmar publicação efetiva no MVP.
+  enabled: false
+
+schedule:
+  # Horários usados pelo script do Agendador de Tarefas do Windows.
+  times:
+    - "08:00"
+    - "17:30"

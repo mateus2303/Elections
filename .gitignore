@@ -1,7 +1,32 @@
-.git/
+# Dados operacionais e saídas locais — nunca versionar
+ENTREGA_FINAL/*.xlsx
+ENTREGA_FINAL/*.zip
+codigos e planilhas legado/*.xlsx
+codigos e planilhas legado/*.png
+data/input/*
+!data/input/.gitkeep
+saidas/*
+!saidas/.gitkeep
+*.csv
+*.parquet
+
+# Ambiente local
+.venv/
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+data/monitor_tse/
+logs/monitor_tse/
+ENTREGA_FINAL/MONITOR_TSE/*.xlsx
+ENTREGA_FINAL/MONITOR_TSE/*.tmp
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.py[cod]
+.pytest_cache/
+
+# Segredos e configurações de conexão
 .env
 .env.*
-!.env.example
-tmp/
-__pycache__/
-*.py[cod]
+databricks.yml
