@@ -9,6 +9,7 @@ import pandas as pd
 from .configuration import Config, load_config
 from .domain import ConfigurationError
 from .ingestion import read_workbook
+from .legacy_presentation import generate_legacy_model_a
 from .model_b import aggregate_model_b, candidate_config
 from .probability import leadership_probability
 from .presentation import generate_presentation
@@ -25,6 +26,13 @@ def _pipeline(config: Config, command: str, model: str) -> tuple[Path, bool]:
     data = standardize(workbook)
     issues = validate(data)
     blocked = has_blocking_errors(issues)
+    # A execução normal do Modelo A já valida a base antes de publicar. Se a
+    # validação passar, não há motivo para calcular nem salvar tabelas técnicas
+    # que não fazem parte da entrega macro solicitada.
+    if command == "run" and model == "a" and not blocked:
+        run_dir = config.resolve_path("outputs_dir") / "Modelo_A_Baseline_Oficial"
+        generate_legacy_model_a(config, run_dir, data)
+        return run_dir, False
     execution_config = candidate_config(config) if model == "b" else config
     aggregate = aggregate_model_b if model == "b" else aggregate_model_a
     generate_outputs = command != "validate" and not blocked

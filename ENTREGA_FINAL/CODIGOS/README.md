@@ -4,16 +4,16 @@ Esta pasta é o pacote portátil para levar ao computador do trabalho.
 
 ## Estrutura
 
-- `Modelo_A_Baseline_Oficial/`: configuração e comando do Modelo A, baseline oficial.
+- `Modelo_A_Baseline_Oficial/`: contém somente `MODELO A.PY`, o agregador autocontido do baseline oficial.
 - `Modelo_B_Candidato_Experimental/`: configuração e comando do Modelo B, candidato experimental.
 - `MOTOR_COMUM/`: motor Python compartilhado pelos dois modelos. O código não é duplicado: cada modelo escolhe a metodologia pelo parâmetro `--model`.
 
 ## Preparação no computador do trabalho
 
-Mantenha a pasta `ENTREGA_FINAL` inteira, com `Base_nova_limpa.xlsx`, `CODIGOS` e `RESULTADOS_ATUAIS`. Instale Python 3.12 ou superior e, a partir da pasta que contém `ENTREGA_FINAL`, execute:
+Para rodar o Modelo A em outro computador, basta copiar `MODELO A.PY` e `Base_nova_limpa.xlsx` para a mesma pasta. Instale Python 3.12 ou superior e as bibliotecas necessárias:
 
 ```powershell
-python -m pip install -e ENTREGA_FINAL\CODIGOS\MOTOR_COMUM
+python -m pip install pandas numpy openpyxl matplotlib
 ```
 
 ## Execução
@@ -21,7 +21,7 @@ python -m pip install -e ENTREGA_FINAL\CODIGOS\MOTOR_COMUM
 Para o baseline oficial:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\ENTREGA_FINAL\CODIGOS\Modelo_A_Baseline_Oficial\executar_modelo_a.ps1
+python ".\ENTREGA_FINAL\CODIGOS\Modelo_A_Baseline_Oficial\MODELO A.PY"
 ```
 
 Para o candidato experimental:
@@ -37,7 +37,7 @@ Os resultados continuam sendo gravados em `ENTREGA_FINAL\RESULTADOS_ATUAIS\`, em
 1. Abra `ENTREGA_FINAL\Base_nova_limpa.xlsx`.
 2. Adicione as novas linhas publicadas em `Confrontos` e/ou `Lula3`.
 3. Salve e feche o Excel.
-4. Rode o script do modelo desejado.
-5. Abra o workbook correspondente em `RESULTADOS_ATUAIS`.
+4. Para o Modelo A, rode `MODELO A.PY`.
+5. Para o Modelo A, abra as planilhas e os gráficos diretamente em `RESULTADOS_ATUAIS\Modelo_A_Baseline_Oficial`. Além das duas saídas de governo e de cada segundo turno disponível contra Flávio, Renan e Caiado, o código gera um único gráfico de primeiro turno, avaliação do governo por sexo e quebras de sexo e religião para os confrontos de segundo turno que tiverem dados publicados.
 
-Novos adversários entram por novas linhas em `Confrontos`; não é necessário criar uma pasta ou alterar o código para cada nome.
+Novos adversários entram por novas linhas em `Confrontos`; não é necessário criar uma pasta ou alterar a estrutura da base para cada nome. No primeiro turno, o gráfico atual é deliberadamente restrito a Lula, Flávio, Renan Santos, Romeu Zema, Ronaldo Caiado e Michelle Bolsonaro; para cada um, usa a média dos cenários em que foi testado. Ausência em um cenário não recebe valor zero. Nas aberturas, o código publica apenas os grupos e confrontos que estiverem efetivamente disponíveis na base.

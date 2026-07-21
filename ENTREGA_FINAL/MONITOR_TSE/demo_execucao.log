@@ -1,4 +1,0 @@
-2026-07-20T14:07:27-03:00 INFO run_id=11 status=success source_generation="20/07/2026 05:46:52" rows=1251 new=0 changed=0 errors=0
-2026-07-20T14:07:27-03:00 INFO source_discovery="CKAN catalog with validated CDN fallback"
-2026-07-20T14:07:27-03:00 INFO output="monitor_pesquisas_tse.xlsx" sheets=8
-2026-07-20T14:07:27-03:00 INFO publication_status_is_separate_from_allowed_date=true
