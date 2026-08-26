@@ -1,0 +1,116 @@
+## Resumo da reunião
+
+### Objetivo do estudo
+
+O estudo buscou medir o impacto da abstenção no resultado de uma eleição apertada e responder duas perguntas:
+
+1. Quanto a abstenção altera o gap Lula/Flávio em 2026?
+2. Esse efeito é maior ou menor que em 2018 e 2022? 
+
+A motivação foi separar o efeito da abstenção de outros componentes do erro das pesquisas. O grupo argumentou que, embora a abstenção seja relativamente estável entre eleições, sua composição por perfil e campo político pode alterar o resultado. 
+
+---
+
+## Bases e metodologia
+
+Foram combinadas três fontes:
+
+- **TSE:** abstenção efetiva por grupos demográficos; não inclui renda.
+- **ESEB:** pesquisa pós-eleitoral acadêmica, com microdados e variáveis de engajamento.
+- **IPESP pós-eleitoral:** bases de 2018 e 2022, incluindo renda, mas com amostras menores e subreporte mais intenso. 
+
+O principal desafio foi o subreporte de abstenção nas pesquisas. Para lidar com isso, foram testadas duas formas de ajuste: calibragem final do modelo e reponderação prévia da amostra para reproduzir a abstenção observada pelo TSE. 
+
+---
+
+## Exercícios para estimar o efeito em 2026
+
+### Exercício 1 — Demografia com TSE
+
+- Modelo com idade, sexo, escolaridade e região.
+- Usa dados efetivos de abstenção do TSE e aplica as probabilidades estimadas à pesquisa de 2026.
+- Resultado: redução de **0,7 p.p.** no gap Lula/Flávio, isto é, efeito favorável à direita. 
+
+### Exercício 2 — Demografia + engajamento com ESEB
+
+- Adiciona interesse político, voto anterior e percepção sobre a importância do voto e de quem governa.
+- **Modelo 2A:** redução de **0,1 p.p.** no gap.
+- **Modelo 2B:** redução de **0,7 p.p.** no gap.
+- A inclusão de engajamento fez boa parte das variáveis demográficas perder significância. 
+
+### Exercício 3 — Apenas engajamento com ESEB
+
+- Testa o efeito sem variáveis demográficas.
+- **Modelo 3A:** redução de **0,1 p.p.** no gap.
+- **Modelo 3B:** efeito próximo de **zero**.
+- Sugere que, isoladamente, os indicadores de engajamento explicam um impacto pequeno. 
+
+### Exercício 4 — Engajamento + renda com IPESP pós-eleitoral
+
+- Inclui renda, indisponível no TSE.
+- A base tem menor N e maior subreporte de abstenção, o que limita a significância de parte dos resultados.
+- **Modelo 4A:** efeito de **0 p.p.**
+- **Modelo 4B:** redução de **0,7 p.p.** no gap. 
+
+### Exercício 5 — Autorreporte de disposição para votar
+
+- Mede o resultado entre grupos que afirmam ter maior ou menor certeza de comparecer.
+- Eleitores de Flávio declararam mais frequentemente que “com certeza” votariam.
+- Excluindo quem disse que certamente não votaria, o gap caiu **2,1 p.p.**
+- Considerando apenas quem disse que certamente votaria, o gap caiu **2,7 p.p.** 
+
+---
+
+## Exercícios de comparação histórica
+
+### Exercício temporal 1 — Reponderação demográfica
+
+- Ajusta as pesquisas para representar a composição de quem efetivamente vota, usando sexo e escolaridade; depois adicionando idade e região.
+- Estimativas:
+  - **2026:** 0,5 a 0,7 p.p.
+  - **2022:** 0,9 a 1,2 p.p.
+  - **2018:** 0,7 a 1,4 p.p.
+- Indicação: o efeito em 2026 é menor que nos ciclos anteriores. 
+
+### Exercício temporal 2 — Interesse eleitoral
+
+- Usa interesse na eleição, escolaridade e sexo.
+- Uma versão se apoia na disposição declarada de votar caso o voto fosse facultativo; a outra usa autorreporte de abstenção.
+- Estimativas:
+  - **2026:** 0,8 p.p.
+  - **2022:** 1,4 a 1,8 p.p.
+  - **2018:** 1,2 a 1,9 p.p.
+- Reforça que o impacto relativo da abstenção parece menor em 2026. 
+
+### Exercício temporal 3 — Simulação de abstenção zero
+
+- Para 2018 e 2022, estima a escolha provável de abstencionistas a partir das notas dadas aos candidatos.
+- Resultados:
+  - **2018:** 0,9 p.p.
+  - **2022:** 3,8 p.p.
+  - **2026:** 3,1 p.p., calculado por uma aproximação baseada na certeza declarada de voto.
+- O resultado de 2026 fica abaixo de 2022, mas acima de 2018. 
+
+### Exercício temporal 4 — Indicadores descritivos de engajamento
+
+- Compara, entre os campos políticos, interesse eleitoral, importância do voto e importância de quem governa.
+- Em 2022, os eleitores de direita apareciam mais engajados nesses indicadores.
+- Em 2026, os eleitores de esquerda apresentaram notas médias maiores.
+- O exercício é descritivo e não entra na mediana comparável dos modelos. 
+
+---
+
+## Leitura geral dos resultados
+
+Os exercícios de modelagem para 2026 convergiram para um efeito entre **0 e -0,7 p.p.** no gap Lula/Flávio, enquanto o exercício de autorreporte apontou um efeito maior, entre **-2,1 e -2,7 p.p.** A mediana usada pelo grupo para a estimativa principal foi aproximadamente **-0,7 p.p.** 
+
+No backtest, a mediana foi de **-0,8 p.p. em 2026**, contra **-1,5 p.p. em 2022** e **-1,2 p.p. em 2018**. A interpretação apresentada foi que a abstenção ainda reduz o gap em favor da direita, mas menos do que nos dois ciclos anteriores. 
+
+---
+
+## Resumo final
+
+- A recomendação é corrigir uma **média simples de pesquisas** em cerca de **1 p.p.** no gap Lula/Flávio.
+- Exemplo apresentado: **Flávio -4** nas pesquisas passaria para algo como **Flávio -3** após o ajuste.
+- Para um **agregador**, o ajuste incremental sugerido é menor, em torno de **0,7 p.p.**, pois parte do efeito histórico já pode estar incorporada.
+- A estimativa é condicionada aos dados de engajamento coletados em julho. Caso o engajamento de Flávio tenha melhorado junto com sua intenção de voto desde então, o efeito da abstenção pode ser ainda menor.
