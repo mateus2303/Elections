@@ -1,0 +1,36 @@
+                        BANCO DE DADOS NACIONAL DE OPINIÃO PÚBLICA – CESOP
+                                                                   FICHA TÉCNICA
+
+
+Número da Pesquisa:     CESOP / DATAFOLHA / 04787
+
+Título da Pesquisa      INTENÇÃO DE VOTO GOVERNADOR E SENADOR DA BA II- 2022
+
+Local da Pesquisa       BAHIA/BA
+
+Data da Pesquisa        09/2022
+
+Universo da Pesquisa    Pesquisa realizada com eleitores de 16 anos ou mais
+
+Tamanho da Pesquisa     1526
+
+Instituto de Pesquisa   DATAFOLHA
+
+Palavra-chave           Acesso aos meios de informação / Redes sociais internet;
+                        Avaliação governo estadual;
+                        Avaliação governo federal;
+                        Corrupção e impeachment;
+                        Eleição governador(a) - Intenção de voto;
+                        Eleição presidente(a) - Intenção de voto;
+                        Esporte e lazer;
+                        Preferência partidária
+Fonte de coleta         Questionário estruturado
+
+Metodologia
+Programas utilizados    SPSS
+
+Documentação            Questionário
+                        Tabela de frequência simples
+                        Base de Dados (microdados)
+                        Ficha Técnica
+

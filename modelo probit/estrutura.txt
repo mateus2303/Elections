@@ -1,0 +1,847 @@
+Você vai construir uma base histórica, auditável e reproduzível de pesquisas eleitorais brasileiras de segundo turno, comparando a última pesquisa Datafolha disponível antes de cada votação com o resultado oficial da eleição.
+
+Este é um projeto de coleta e organização de dados. Não é, neste momento, um projeto de econometria, modelagem, visualização ou interpretação política.
+
+Seu objetivo é produzir a base correta com o mínimo possível de complexidade operacional.
+
+1. OBJETIVO CENTRAL
+
+Construir uma base histórica cobrindo:
+
+* eleições presidenciais brasileiras com segundo turno;
+* eleições para governador com segundo turno;
+* todos os estados aplicáveis;
+* o maior número possível de anos, retrocedendo enquanto existirem eleições elegíveis e dados historicamente recuperáveis.
+
+Para cada disputa, identificar:
+
+1. qual foi a última pesquisa Datafolha de segundo turno disponível antes da votação;
+2. os números divulgados nessa pesquisa;
+3. os candidatos e partidos;
+4. posteriormente, o resultado oficial do segundo turno;
+5. a fonte exata de cada informação.
+
+A unidade de observação deve ser:
+
+uma disputa eleitoral de segundo turno em determinado ano, cargo e local.
+
+Exemplos:
+
+* Presidente — Brasil — 2022 — Lula x Bolsonaro
+* Governador — SP — 2022 — Tarcísio x Haddad
+* Presidente — Brasil — 2018 — Bolsonaro x Haddad
+
+Cada disputa deve ocupar uma única linha da base principal.
+
+2. PRINCÍPIOS DO PROJETO
+
+Priorize, nesta ordem:
+
+1. exatidão;
+2. rastreabilidade da fonte;
+3. cobertura histórica;
+4. comparabilidade;
+5. eficiência operacional;
+6. simplicidade do projeto.
+
+Não maximize quantidade de arquivos, código, documentação ou arquitetura.
+
+Maximize a qualidade da base final.
+
+Não invente nenhum dado.
+
+Não preencha uma lacuna com inferência apresentada como fato.
+
+Não use outro instituto no lugar do Datafolha sem autorização explícita.
+
+Não exclua da base uma eleição simplesmente porque a pesquisa Datafolha não foi encontrada.
+
+Ausência de dado também é informação e deve ser registrada.
+
+3. RESULTADO FINAL ESPERADO
+
+O principal output deve ser:
+
+base_segundo_turno.xlsx
+
+Esse é o produto do projeto.
+
+Não crie apresentações, dashboards, gráficos, notebooks, relatórios extensos ou análises econométricas.
+
+A planilha deve conter apenas três abas, salvo necessidade realmente comprovada:
+
+1. base_master
+2. pendencias
+3. dicionario
+
+Não crie abas separadas por ano, estado, eleição ou instituto.
+
+4. ORGANIZAÇÃO DOS ARQUIVOS
+
+Se estiver operando em um ambiente com sistema de arquivos, mantenha o projeto extremamente simples.
+
+Use a pasta atual do projeto como raiz.
+
+Não crie uma árvore grande de diretórios.
+
+Estrutura preferencial:
+
+/
+base_segundo_turno.xlsx
+coleta_eleitoral.py   [somente se código for realmente necessário]
+
+Não crie:
+
+* dezenas de CSVs intermediários;
+* arquivos por estado;
+* arquivos por eleição;
+* arquivos por ano;
+* notebooks;
+* múltiplos scripts Python;
+* relatórios Markdown sucessivos;
+* backups desnecessários;
+* cópias redundantes dos mesmos dados;
+* pastas vazias;
+* pastas temporárias permanentes.
+
+Se um script for necessário, tente concentrar toda a lógica reutilizável em um único script bem organizado.
+
+Antes de criar código, pergunte silenciosamente:
+
+“Isso realmente economiza trabalho e reduz erros?”
+
+Se a resposta for não, faça a coleta diretamente.
+
+Se estiver usando ChatGPT sem acesso persistente ao sistema de arquivos, siga a mesma estrutura lógica e gere diretamente a planilha final quando possível.
+
+5. NÃO BAIXAR DADOS DESNECESSÁRIOS
+
+Não faça download em massa.
+
+Em especial:
+
+* não baixe microdados SPSS se as tabelas publicadas já contêm os números necessários;
+* não baixe questionários quando a tabela e a ficha técnica forem suficientes;
+* não arquive centenas de PDFs apenas “por segurança”;
+* não baixe bases completas do TSE quando uma consulta ou arquivo menor atender ao objetivo.
+
+Prefira consultar a fonte diretamente.
+
+Baixe um arquivo somente quando isso for necessário para extrair ou validar algum dado.
+
+Se precisar fazer download apenas para processamento, use arquivo temporário e remova-o depois quando não houver valor em mantê-lo.
+
+6. FONTES
+
+6.1 Pesquisas eleitorais
+
+Fonte prioritária:
+
+CESOP/Unicamp — Banco de Dados
+https://www.cesop.unicamp.br/por/banco_de_dados
+
+Priorize registros do instituto:
+
+DATAFOLHA
+
+Dentro de um registro do CESOP, priorize:
+
+1. Tabelas da pesquisa;
+2. Ficha técnica;
+3. Questionário, somente quando necessário para interpretar corretamente a pergunta;
+4. Microdados apenas em último caso.
+
+Quando necessário, fontes complementares podem ser usadas apenas para verificar ou localizar a pesquisa, como:
+
+* Datafolha;
+* Folha de S.Paulo;
+* registros oficiais de pesquisas eleitorais;
+* arquivos jornalísticos confiáveis.
+
+Mas o Datafolha continua sendo o instituto-alvo.
+
+Não substitua automaticamente uma pesquisa ausente por Ipec, Ibope, Quaest, Atlas, Paraná Pesquisas ou qualquer outro instituto.
+
+6.2 Resultados oficiais
+
+Use prioritariamente fontes oficiais do Tribunal Superior Eleitoral.
+
+Preferência:
+
+Portal de Dados Abertos do TSE
+https://dadosabertos.tse.jus.br/
+
+Utilize também dados oficiais de candidaturas do TSE quando necessários para confirmar partido, nome eleitoral ou outra informação objetiva.
+
+7. PRIMEIRA ETAPA: CONSTRUIR O UNIVERSO DE ELEIÇÕES
+
+Não comece procurando pesquisas aleatoriamente.
+
+Primeiro determine o universo completo de observações elegíveis.
+
+Identifique todas as eleições ordinárias para:
+
+* Presidente da República;
+* Governador;
+
+que efetivamente tiveram segundo turno.
+
+Não assuma que determinado cargo teve segundo turno apenas porque houve eleição naquele ano.
+
+Não crie observações para eleições decididas no primeiro turno.
+
+Por padrão, não inclua:
+
+* prefeito;
+* eleições suplementares;
+* eleições extraordinárias;
+* Senado;
+* deputados;
+* primeiro turno isoladamente.
+
+Comece pelos ciclos mais recentes e avance historicamente:
+
+2022 → 2018 → 2014 → 2010 → 2006 → 2002 → 1998 → 1994 → 1990 → períodos anteriores aplicáveis.
+
+Isso é uma ordem de pesquisa, não uma lista de eleições automaticamente elegíveis.
+
+Verifique efetivamente quais disputas tiveram segundo turno.
+
+A base_master deve conter o universo completo identificado, inclusive as eleições para as quais nenhuma pesquisa Datafolha seja encontrada.
+
+8. IDENTIFICADOR ÚNICO
+
+Crie um identificador simples e determinístico:
+
+id_disputa
+
+Formato sugerido:
+
+ANO_CARGO_UF
+
+Exemplos:
+
+2022_PRES_BR
+2022_GOV_SP
+2018_GOV_RJ
+
+Esse identificador não pode se repetir.
+
+9. COMO ESCOLHER A PESQUISA CORRETA
+
+Para cada disputa, procure pesquisas Datafolha referentes ao segundo turno específico.
+
+O objetivo é selecionar:
+
+a última pesquisa de intenção de voto disponível ao eleitor antes da votação.
+
+Idealmente será a pesquisa de véspera.
+
+Use principalmente a data de divulgação/publicação para determinar qual é a última pesquisa.
+
+Também registre as datas de campo.
+
+Exemplo:
+
+Eleição domingo.
+
+Pesquisas divulgadas:
+
+* terça;
+* quinta;
+* sábado.
+
+Selecione a de sábado.
+
+Não selecione:
+
+* pesquisa de primeiro turno;
+* cenário hipotético publicado antes da definição do segundo turno quando existir pesquisa posterior específica;
+* pesquisa espontânea se houver intenção estimulada diretamente comparável;
+* boca de urna;
+* exit poll;
+* pesquisa divulgada após o início da votação;
+* pesquisa de outro instituto apenas porque está mais próxima da eleição.
+
+Se duas pesquisas Datafolha forem divulgadas na mesma data, investigue qual é efetivamente a pesquisa final.
+
+Use:
+
+* período de campo;
+* horário/data da divulgação, se disponível;
+* número da pesquisa;
+* descrição da publicação;
+* contexto das tabelas.
+
+Não escolha arbitrariamente.
+
+10. DADO BRUTO PRIMEIRO
+
+Preserve o que a pesquisa efetivamente divulgou.
+
+Não transforme silenciosamente percentuais.
+
+Pesquisas podem divulgar resultados em:
+
+* votos totais;
+* votos válidos;
+* ambos.
+
+Isso deve ser explicitamente registrado.
+
+Nunca trate percentual em votos totais como se fosse percentual em votos válidos.
+
+Quando a pesquisa divulgar ambos, guarde ambos.
+
+Quando divulgar somente um deles, deixe o outro como ausente.
+
+Não faça imputação apenas para preencher células.
+
+11. VARIÁVEIS DA BASE_MASTER
+
+Utilize, preferencialmente, estas colunas.
+
+Identificação
+
+id_disputa
+ano
+data_eleicao
+cargo
+uf
+turno
+
+Para presidente:
+
+uf = BR
+
+turno deve ser 2 em todas as observações.
+
+Candidatos
+
+candidato_1
+partido_1
+candidato_2
+partido_2
+vencedor
+
+Para manter consistência:
+
+candidato_1 = vencedor oficial do segundo turno
+candidato_2 = segundo colocado
+
+Isso deve ser padronizado em toda a base.
+
+Use o partido do candidato naquela eleição, não sua filiação atual.
+
+Pesquisa
+
+instituto
+numero_pesquisa_cesop
+data_publicacao
+data_campo_inicio
+data_campo_fim
+dias_publicacao_ate_eleicao
+dias_campo_fim_ate_eleicao
+tamanho_amostra
+margem_erro
+universo_pesquisa
+
+instituto deverá ser DATAFOLHA nos casos principais.
+
+Resultados da pesquisa em votos totais
+
+pesquisa_c1_total
+pesquisa_c2_total
+pesquisa_branco
+pesquisa_nulo
+pesquisa_branco_nulo
+pesquisa_ns_nr
+
+Respeite o formato original.
+
+Exemplo:
+
+se a fonte divulgar apenas “branco/nulo = 5%”, registre em pesquisa_branco_nulo e não tente inventar sua decomposição.
+
+Resultados da pesquisa em votos válidos
+
+pesquisa_c1_validos
+pesquisa_c2_validos
+
+Preencha somente se os votos válidos tiverem sido explicitamente divulgados pela fonte.
+
+Não derive automaticamente nesta etapa.
+
+Natureza do dado
+
+tipo_percentual_pesquisa
+
+Valores possíveis:
+
+TOTAL
+VALIDOS
+AMBOS
+
+Resultado oficial
+
+resultado_c1_validos_pct
+resultado_c2_validos_pct
+
+votos_c1
+votos_c2
+votos_validos
+votos_brancos
+votos_nulos
+abstencoes
+comparecimento
+eleitorado
+
+Use percentuais oficiais de votos válidos para os candidatos.
+
+Preserve contagens oficiais quando disponíveis.
+
+Auditoria
+
+fonte_pesquisa_url
+pagina_tabela_pesquisa
+fonte_resultado_url
+fonte_partido_url
+data_acesso
+status_pesquisa
+status_validacao
+observacoes
+
+12. STATUS DA PESQUISA
+
+Toda disputa deve receber um status.
+
+Utilize uma taxonomia simples:
+
+ENCONTRADA
+NAO_ENCONTRADA
+FONTE_INACESSIVEL
+DADO_AMBIGUO
+REVISAO_NECESSARIA
+
+Nunca deixe simplesmente vazia uma disputa pesquisada sem explicar o motivo.
+
+“NAO_ENCONTRADA” significa:
+
+foi feita uma busca razoável e não foi localizada pesquisa Datafolha elegível.
+
+Não significa que você provou que nenhuma pesquisa existiu.
+
+13. PESQUISAS NÃO ENCONTRADAS
+
+Quando não encontrar Datafolha para uma disputa:
+
+1. não invente;
+2. não use outro instituto;
+3. não exclua a disputa;
+4. registre a observação na base_master;
+5. registre-a também na aba pendencias;
+6. informe resumidamente onde procurou.
+
+Não gaste tempo indefinidamente tentando encontrar um único caso.
+
+Depois de uma busca razoável em:
+
+* CESOP;
+* Datafolha/Folha, quando acessível;
+* busca web direcionada;
+* fontes complementares relevantes;
+
+classifique o caso e continue.
+
+O objetivo é construir a base inteira, e não ficar travado em uma observação difícil.
+
+14. ABA PENDENCIAS
+
+A aba pendencias deve conter somente casos que exigem atenção.
+
+Colunas:
+
+id_disputa
+tipo_pendencia
+descricao
+buscas_realizadas
+melhor_evidencia_encontrada
+acao_sugerida
+
+Exemplos:
+
+2022_GOV_XX | NAO_ENCONTRADA | Nenhuma pesquisa Datafolha localizada…
+1994_GOV_YY | DADO_AMBIGUO | Duas tabelas apresentam bases diferentes…
+
+Não transforme essa aba em um diário detalhado.
+
+Ela deve servir para revisão humana eficiente.
+
+15. ABA DICIONARIO
+
+Crie um dicionário simples com:
+
+coluna
+descricao
+unidade
+observacao
+
+Explique apenas o necessário para que outra pessoa consiga interpretar corretamente a base.
+
+16. EXTRAÇÃO DE PDFs
+
+Quando a informação estiver em PDF:
+
+primeiro tente extrair o texto/tabelas diretamente.
+
+Não use OCR se o PDF possuir camada de texto utilizável.
+
+Use OCR somente quando necessário.
+
+Confira visualmente a tabela quando:
+
+* estrutura da extração estiver quebrada;
+* candidatos estiverem trocados;
+* percentuais não fecharem;
+* houver múltiplos cenários;
+* houver dúvida entre votos totais e votos válidos.
+
+Nunca confie cegamente em extração automatizada de tabela.
+
+17. RESULTADOS OFICIAIS
+
+Para cada disputa, valide no TSE:
+
+* candidatos;
+* partidos;
+* vencedor;
+* votos nominais;
+* percentual dos candidatos nos votos válidos;
+* total de votos válidos;
+* brancos;
+* nulos;
+* abstenções;
+* comparecimento;
+* eleitorado, quando disponível.
+
+Não calcule o resultado oficial usando reportagens quando o dado do TSE estiver disponível.
+
+Fontes jornalísticas podem auxiliar na localização, mas o resultado final deve preferencialmente ser oficial.
+
+18. CONTROLE DE QUALIDADE
+
+Antes de considerar uma linha concluída, valide:
+
+1. a eleição realmente teve segundo turno;
+2. cargo e UF estão corretos;
+3. candidato 1 é o vencedor oficial;
+4. candidato 2 é o segundo colocado;
+5. partidos correspondem àquela eleição;
+6. a pesquisa é Datafolha;
+7. a pesquisa é efetivamente referente ao segundo turno;
+8. não existe pesquisa Datafolha posterior antes da votação;
+9. percentual total não foi confundido com percentual válido;
+10. números foram transcritos corretamente;
+11. URL da fonte foi registrada;
+12. data da pesquisa é anterior à votação;
+13. a linha não é duplicada.
+
+Faça também testes de coerência.
+
+Exemplos:
+
+* votos válidos dos dois candidatos devem representar aproximadamente 100%, considerando arredondamentos;
+* percentuais de uma pesquisa devem ser numericamente plausíveis;
+* data de campo não pode ocorrer depois da eleição;
+* vencedor oficial deve possuir maior número de votos válidos;
+* id_disputa deve ser único.
+
+Se uma inconsistência não puder ser resolvida com segurança:
+
+não force o dado.
+
+Marque REVISAO_NECESSARIA.
+
+19. RASTREABILIDADE
+
+Cada número importante deve poder ser auditado posteriormente.
+
+Por isso, sempre que possível registre:
+
+* URL exata do registro;
+* número CESOP da pesquisa;
+* página do PDF em que aparecem os percentuais;
+* URL do resultado do TSE;
+* observação curta quando houver alguma decisão interpretativa.
+
+Evite registrar apenas a homepage de um site quando existir URL específica da pesquisa ou do conjunto de dados.
+
+20. EFICIÊNCIA DA PESQUISA
+
+Trabalhe em lotes lógicos.
+
+Ordem sugerida:
+
+1. construir universo completo;
+2. 2022;
+3. 2018;
+4. 2014;
+5. 2010;
+6. continuar retroativamente.
+
+Dentro de cada ano:
+
+1. Presidente, se houver segundo turno;
+2. governadores com segundo turno;
+3. concluir o máximo possível daquele ciclo;
+4. salvar;
+5. avançar.
+
+Não refaça buscas que já foram concluídas.
+
+Use a própria base_master como controle de progresso.
+
+Antes de pesquisar uma disputa, confira seu status.
+
+Se já estiver ENCONTRADA e VALIDADA, não repita o trabalho sem motivo.
+
+21. RETOMADA DO PROJETO
+
+Se base_segundo_turno.xlsx já existir:
+
+não recomece do zero.
+
+Abra a base.
+
+Verifique:
+
+* linhas existentes;
+* status;
+* pendências;
+* último período concluído.
+
+Continue a partir dali.
+
+Preserve os dados já validados, salvo se encontrar evidência objetiva de erro.
+
+Se corrigir algum dado existente, registre brevemente o motivo em observacoes.
+
+22. USO DE CÓDIGO
+
+Código é ferramenta, não objetivo.
+
+Só programe partes repetitivas que realmente economizem tempo ou reduzam erro.
+
+Possíveis bons usos:
+
+* gerar inicialmente o universo de eleições;
+* ler dados estruturados do TSE;
+* validar duplicatas;
+* fazer verificações numéricas;
+* escrever a planilha;
+* consultar sistematicamente páginas com estrutura consistente.
+
+Possíveis usos ruins:
+
+* criar um scraper complexo para coletar cinco dados;
+* criar arquitetura de múltiplos módulos;
+* criar classes desnecessárias;
+* construir banco SQL para uma base pequena;
+* criar API;
+* construir interface gráfica;
+* criar pipeline sofisticado antes de entender as fontes.
+
+Se código for necessário, prefira:
+
+coleta_eleitoral.py
+
+Um script organizado é melhor que vários scripts pequenos para este projeto.
+
+Não crie um arquivo Python diferente por ano ou fonte.
+
+23. SE ESTIVER RODANDO NO OPENCODE
+
+Primeiro inspecione:
+
+* pasta atual;
+* arquivos existentes;
+* versão existente da base;
+* ferramentas disponíveis.
+
+Não altere desnecessariamente o ambiente.
+
+Não instale pacotes grandes quando bibliotecas simples já resolvem.
+
+Prefira ferramentas leves e amplamente usadas.
+
+Não crie ambiente ou arquitetura nova se o ambiente atual funcionar.
+
+Use navegador/web quando a informação estiver em páginas.
+
+Use Python quando houver ganho real de escala.
+
+Execute validações antes de encerrar.
+
+24. SE ESTIVER RODANDO NO CHATGPT SOL
+
+Use pesquisa na web e ferramentas disponíveis para localizar e verificar as fontes.
+
+Trabalhe diretamente na planilha sempre que possível.
+
+Não produza código apenas para demonstrar metodologia.
+
+Se for possível gerar o XLSX diretamente, gere-o.
+
+Use o trabalho computacional apenas nas partes em que ele melhorar:
+
+* velocidade;
+* consistência;
+* validação;
+* tratamento de dados.
+
+25. O QUE NÃO FAZER AGORA
+
+Não faça:
+
+* Probit;
+* regressões;
+* classificação esquerda/direita;
+* classificação ideológica dos partidos;
+* análise de viés dos institutos;
+* gráficos;
+* erro médio;
+* MAE;
+* RMSE;
+* análise de acurácia;
+* comparação entre institutos;
+* apresentação;
+* dashboard;
+* conclusão política.
+
+Não antecipe etapas futuras.
+
+A tarefa atual é construir a matéria-prima correta para que essas análises possam ser feitas depois.
+
+26. NÃO INVENTAR PADRONIZAÇÕES
+
+Se a fonte tiver:
+
+Tarcísio 48
+Haddad 42
+branco/nulo 5
+não sabe 5
+
+registre exatamente essa estrutura.
+
+Se outra fonte apresentar:
+
+Tarcísio 52
+Haddad 48
+em votos válidos
+
+registre como votos válidos.
+
+Não tente fazer as duas pesquisas “parecerem iguais” nesta fase.
+
+A padronização econométrica ocorrerá depois.
+
+Coleta e transformação são etapas diferentes.
+
+27. CASOS AMBÍGUOS
+
+Se houver duas interpretações possíveis de uma tabela:
+
+investigue antes de escolher.
+
+Consulte:
+
+* título da tabela;
+* texto da pergunta;
+* ficha técnica;
+* notas de rodapé;
+* questionário, se necessário;
+* publicação associada.
+
+Se ainda houver ambiguidade:
+
+não escolha silenciosamente.
+
+Marque DADO_AMBIGUO ou REVISAO_NECESSARIA e explique em uma frase.
+
+28. CRITÉRIO DE CONCLUSÃO DO PROJETO
+
+O trabalho estará concluído quando:
+
+* todas as eleições elegíveis identificadas estiverem representadas na base_master;
+* não houver duplicatas de id_disputa;
+* cada caso tiver um status de pesquisa;
+* todas as pesquisas encontradas possuírem fonte auditável;
+* a última pesquisa Datafolha tiver sido selecionada corretamente;
+* resultados oficiais tiverem sido adicionados sempre que disponíveis;
+* partidos tiverem sido verificados;
+* casos não resolvidos estiverem claramente em pendencias;
+* o dicionário estiver completo;
+* a planilha abrir normalmente;
+* nenhum arquivo intermediário desnecessário permanecer no projeto.
+
+29. VERIFICAÇÃO FINAL OBRIGATÓRIA
+
+Antes de finalizar, faça uma auditoria final da planilha.
+
+Verifique programaticamente quando possível:
+
+* duplicatas;
+* campos obrigatórios ausentes;
+* datas impossíveis;
+* pesquisas posteriores à eleição;
+* percentuais fora de 0–100;
+* inconsistências vencedor/resultado;
+* códigos de UF;
+* partidos ausentes;
+* URLs ausentes em observações consideradas concluídas;
+* erros evidentes de transcrição.
+
+Abra ou inspecione também a estrutura final da planilha.
+
+Não diga que a base foi validada se essas verificações não tiverem sido efetivamente realizadas.
+
+30. RELATO AO USUÁRIO
+
+Durante a execução, não me envie descrições longas de cada passo.
+
+Atualize apenas em marcos relevantes, por exemplo:
+
+* universo identificado;
+* determinado conjunto de anos concluído;
+* obstáculo material encontrado;
+* coleta finalizada.
+
+Ao terminar, responda de forma objetiva com:
+
+* caminho/link da planilha;
+* número total de disputas identificadas;
+* número com Datafolha encontrada;
+* número sem Datafolha localizada;
+* intervalo histórico coberto;
+* quantidade de casos pendentes;
+* qualquer limitação material.
+
+Não escreva um relatório longo se a planilha estiver correta.
+
+31. REGRA FINAL
+
+Não pare o projeto para fazer perguntas que possam ser resolvidas com uma suposição conservadora ou com pesquisa.
+
+Se surgir uma lacuna que não impeça a coleta, registre-a e continue.
+
+Só peça minha intervenção se houver uma decisão que altere materialmente o escopo.
+
+Exemplo:
+
+“Não há Datafolha para vários casos históricos. Posso usar Ibope como fallback?”
+
+Até que eu autorize explicitamente:
+
+não utilize instituto substituto.
+
+Comece agora pela construção do universo completo de eleições de segundo turno e prossiga de maneira sistemática até produzir a base final.

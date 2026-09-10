@@ -1,0 +1,891 @@
+Número da pesquisa: CESOP / DATAFOLHA / 04787
+Título da Pesquisa:
+INTENÇÃO DE VOTO GOVERNADOR DA BA II- 2022
+INTENÇÃO DE VOTO SENADOR DA BA II- 2022
+Data da Pesquisa: SETEMBRO/2022
+Local da Pesquisa: BAHIA/BA
+Tamanho da Pesquisa: 1526
+Universo da Pesquisa: Eleitores de 16 anos ou mais
+
+                                     FX_ID Faixas de Idade
+
+                                                                        Porcentagem        Porcentagem
+                                  Frequência     Porcentagem               válida           acumulativa
+ Válido   1 16 a 24 anos                  228                  14,9               14,9               14,9
+          2 25 a 34 anos                  302                  19,8               19,8               34,7
+          3 35 a 44 anos                  331                  21,7               21,7               56,4
+          4 45 a 59 anos                  365                  23,9               23,9               80,3
+          5 60 anos ou mais               300                  19,7               19,7              100,0
+          Total                          1526                 100,0              100,0
+
+
+                                           SEXO
+
+                                                                 Porcentagem        Porcentagem
+                           Frequência      Porcentagem              válida           acumulativa
+ Válido   1 Masculino              726                 47,5               47,5               47,5
+          2 Feminino               800                 52,5               52,5              100,0
+          Total                   1526            100,0                  100,0
+
+
+  espont ESPONT No mês que vem haverá eleição para presidente. Em quem você pretende votar
+                             para presidente no mês que vem?
+
+                                                                                 Porcentagem        Porcentagem
+                                          Frequência          Porcentagem           válida           acumulativa
+ Válido   2 Ciro Gomes (PDT)                      55                    3,6                3,6                3,6
+          6 Jair Bolsonaro (PL)                  280                   18,4               18,4               22,0
+          10 Lula (PT)                           879                   57,6               57,6               79,6
+          12 Simone Tebet (MDB)                   17                    1,1                1,1               80,7
+          30 Candidato do PT                      30                    1,9                1,9               82,6
+          96 Em                                   61                    4,0                4,0               86,6
+          branco/nulo/nenhum
+          98 Outras respostas                     28                    1,8                1,8               88,4
+          99 Não sabe                            177                   11,6               11,6              100,0
+          Total                                 1526                  100,0              100,0
+
+
+
+
+                                                                                                             Page 1
+  espontba ESPONTBA No mês que vem também haverá eleição para governador do estado da
+                 Bahia. Em quem você pretende votar para governador?
+
+                                                                 Porcentagem     Porcentagem
+                                      Frequência   Porcentagem      válida        acumulativa
+Válido   1 ACM Neto (UNIÃO)                528            34,6            34,6            34,6
+         3 Jerônimo (PT)                   286            18,8            18,8            53,4
+         4 João Roma (PL)                    65            4,3             4,3            57,6
+         30 Candidato do PT/ 13              29            1,9             1,9            59,5
+         31 Atual Governador                 20            1,3             1,3            60,8
+         33 Candidato apoiado                41            2,7             2,7            63,5
+         pelo Lula
+         96 Em                               72            4,7             4,7            68,2
+         branco/nulo/nenhum
+         98 Outras respostas                 68            4,5             4,5            72,7
+         99 Não sabe                       416            27,3            27,3          100,0
+         Total                            1526           100,0          100,0
+
+
+ estimu ESTIMU Se a eleição para presidente fosse hoje e os candidatos fossem estes ____, em
+                                     quem você votaria ?
+
+                                                                 Porcentagem     Porcentagem
+                                      Frequência   Porcentagem      válida        acumulativa
+Válido   2 Ciro Gomes (PDT)                  99            6,5             6,5             6,5
+         3 Constituinte Eymael (DC)           2             ,1              ,1             6,6
+
+         4 Felipe d'Avila (NOVO)              6             ,4              ,4             7,0
+         6 Jair Bolsonaro (PL)             306            20,0            20,0            27,1
+         8 Léo Péricles (UP)                  1             ,1              ,1            27,1
+         10 Lula (PT)                      950            62,3            62,3            89,4
+         12 Simone Tebet (MDB)               41            2,7             2,7            92,1
+         13 Sofia Manzano (PCB)               4             ,3              ,3            92,4
+         14 Vera (PSTU)                       6             ,4              ,4            92,8
+         15 Padre Kelmon (PTB)                2             ,1              ,1            92,9
+         16 Soraya Thronicke                 14             ,9              ,9            93,8
+         (UNIÃO)
+         96 Em                               65            4,3             4,3            98,1
+         branco/nulo/nenhum
+         99 Não sabe                         29            1,9             1,9          100,0
+         Total                            1526           100,0          100,0
+
+
+
+
+                                                                                           Page 2
+estimuba ESTIMUBA Se a eleição para governador do estado da Bahia fosse hoje, em qual destes
+                               candidatos ____ você votaria?
+
+                                                                    Porcentagem    Porcentagem
+                                       Frequência    Porcentagem       válida       acumulativa
+Válido    1 ACM Neto (UNIÃO)                725             47,5           47,5           47,5
+          2 Giovani Damico (PCB)               7              ,5             ,5           48,0
+          3 Jerônimo (PT)                   467             30,6           30,6           78,6
+          4 João Roma (PL)                  127              8,3            8,3           87,0
+          5 Kleber Rosa (PSOL)                 4              ,3             ,3           87,2
+          6 Marcelo Millet (PCO)              16             1,0            1,0           88,3
+          96 Em                               92             6,0            6,0           94,3
+          branco/nulo/nenhum
+          99 Não sabe                         87             5,7            5,7          100,0
+          Total                            1526            100,0          100,0
+
+
+RNUM NUM Qual número você vai digitar na urna eletrônica para confirmar/ anular seu voto para
+                                      governador?
+
+                                                                    Porcentagem    Porcentagem
+                                       Frequência    Porcentagem       válida       acumulativa
+Válido    13 Jerônimo (PT)                  325             21,3           21,3           21,3
+          22 João Roma (PL)                   82             5,3            5,3           26,6
+          44 Acm Neto (UNIÃO)               266             17,5           17,5           44,1
+          990 Mencionou número              150              9,8            9,8           53,9
+          inválido
+          994 Não sabe o número             650             42,6           42,6           96,5
+          do candidato
+          996 Não sabe como                   54             3,5            3,5          100,0
+          anular o voto
+          Total                            1526            100,0          100,0
+
+
+         decivotoba DECISÃOVOTOBA Em relação ao seu voto para governador, você diria que:
+
+                                                                     Porcentagem    Porcentagem
+                                        Frequência    Porcentagem       válida       acumulativa
+Válido      1 Está totalmente                1052            68,9           73,1            73,1
+            decidido a votar em ____
+
+            2 Seu voto ainda pode             377            24,7           26,2            99,3
+            mudar
+            99 Não sabe                        10              ,7             ,7           100,0
+            Total                            1439            94,3          100,0
+Omisso      0                                  87             5,7
+Total                                        1526           100,0
+
+
+
+
+                                                                                            Page 3
+ mudavotoba MUDANÇADEVOTOBA Se você não votar em ____ qual destes candidatos ____ teria
+                        mais chance de receber seu voto?
+
+                                                                         Porcentagem      Porcentagem
+                                          Frequência     Porcentagem        válida         acumulativa
+Válido    1 ACM Neto (UNIÃO)                     99              6,5             26,3            26,3
+          2 Giovani Damico (PCB)                 10               ,6              2,6            28,8
+          3 Jerônimo (PT)                        98              6,4             25,9            54,7
+          4 João Roma (PL)                       40              2,6             10,5            65,2
+          5 Kleber Rosa (PSOL)                    9               ,6              2,5            67,7
+          6 Marcelo Millet (PCO)                 14               ,9              3,7            71,4
+          96 Em                                  56              3,7             14,9            86,3
+          branco/nulo/nenhum
+          99 Não sabe                            52              3,4             13,7           100,0
+          Total                                377              24,7            100,0
+Omisso    0                                   1149              75,3
+Total                                         1526             100,0
+
+
+conhecbaa CONHECBA Vou citar os nomes dos candidatos a governador do estado da
+Bahia e gostaria que você me dissesse de cada um deles, se conhece ou não conhece
+                                    ACM Neto?
+
+                                                              Porcentagem     Porcentagem
+                            Frequência      Porcentagem          válida        acumulativa
+Válido   1 Conhece                 1399                91,7            91,7             91,7
+         2 Não conhece              127                 8,3             8,3         100,0
+         Total                     1526              100,0          100,0
+
+
+conhecbab CONHECBA Vou citar os nomes dos candidatos a governador do estado da
+Bahia e gostaria que você me dissesse de cada um deles, se conhece ou não conhece
+                                 Giovani Damico?
+
+                                                              Porcentagem     Porcentagem
+                            Frequência      Porcentagem          válida        acumulativa
+Válido   1 Conhece                  108                 7,1             7,1              7,1
+         2 Não conhece             1418                92,9            92,9         100,0
+         Total                     1526              100,0          100,0
+
+
+conhecbac CONHECBA Vou citar os nomes dos candidatos a governador do estado da
+Bahia e gostaria que você me dissesse de cada um deles, se conhece ou não conhece
+                                    Jerônimo?
+
+                                                              Porcentagem     Porcentagem
+                            Frequência      Porcentagem          válida        acumulativa
+Válido   1 Conhece                 1026                67,2            67,2             67,2
+         2 Não conhece              500                32,8            32,8         100,0
+         Total                     1526              100,0          100,0
+
+
+
+
+                                                                                                 Page 4
+conhecbad CONHECBA Vou citar os nomes dos candidatos a governador do estado da
+Bahia e gostaria que você me dissesse de cada um deles, se conhece ou não conhece
+                                   João Roma?
+
+                                                          Porcentagem     Porcentagem
+                            Frequência   Porcentagem         válida        acumulativa
+Válido   1 Conhece                 607             39,8            39,8            39,8
+         2 Não conhece             919             60,2            60,2           100,0
+         Total                    1526            100,0           100,0
+
+
+conhecbae CONHECBA Vou citar os nomes dos candidatos a governador do estado da
+Bahia e gostaria que você me dissesse de cada um deles, se conhece ou não conhece
+                                   Kleber Rosa?
+
+                                                          Porcentagem     Porcentagem
+                            Frequência   Porcentagem         válida        acumulativa
+Válido   1 Conhece                 136              8,9             8,9             8,9
+         2 Não conhece            1390             91,1            91,1           100,0
+         Total                    1526            100,0           100,0
+
+
+conhecbaf CONHECBA Vou citar os nomes dos candidatos a governador do estado da
+Bahia e gostaria que você me dissesse de cada um deles, se conhece ou não conhece
+                                  Marcelo Millet?
+
+                                                          Porcentagem     Porcentagem
+                            Frequência   Porcentagem         válida        acumulativa
+Válido   1 Conhece                 125              8,2             8,2             8,2
+         2 Não conhece            1401             91,8            91,8           100,0
+         Total                    1526            100,0           100,0
+
+
+rejeibaa REJEIBA Em quais desses candidatos ____ você não votaria de jeito nenhum no primeiro
+          turno da eleição para governador do estado da Bahia deste ano? E qual mais?
+
+                                                                    Porcentagem     Porcentagem
+                                     Frequência     Porcentagem        válida        acumulativa
+Válido   1 ACM Neto (UNIÃO)               263              17,3            17,3            17,3
+         2 Giovani Damico (PCB)           276              18,1            18,1            35,3
+         3 Jerônimo (PT)                  298              19,5            19,5            54,8
+         4 João Roma (PL)                 263              17,2            17,2            72,1
+         5 Kleber Rosa (PSOL)             111               7,3             7,3            79,3
+         6 Marcelo Millet (PCO)             77              5,1             5,1            84,4
+         18 Votaria em qualquer             59              3,8             3,8            88,2
+         um/ não rejeita nenhum
+         19 Rejeita todos/ não              37              2,4             2,4            90,7
+         votaria em nenhum
+         99 Não sabe                      142               9,3             9,3           100,0
+         Total                           1526             100,0           100,0
+
+
+
+
+                                                                                            Page 5
+rejeibab REJEIBA Em quais desses candidatos ____ você não votaria de jeito nenhum no primeiro
+          turno da eleição para governador do estado da Bahia deste ano? E qual mais?
+
+                                                                  Porcentagem     Porcentagem
+                                     Frequência    Porcentagem       válida        acumulativa
+Válido     2 Giovani Damico (PCB)           62             4,1            14,1            14,1
+           3 Jerônimo (PT)                 115             7,5            26,1            40,2
+           4 João Roma (PL)                116             7,6            26,4            66,6
+           5 Kleber Rosa (PSOL)            106             6,9            23,9            90,5
+           6 Marcelo Millet (PCO)           42             2,7             9,5           100,0
+           Total                           441            28,9           100,0
+Omisso     0                             1085             71,1
+Total                                    1526            100,0
+
+
+rejeibac REJEIBA Em quais desses candidatos ____ você não votaria de jeito nenhum no primeiro
+          turno da eleição para governador do estado da Bahia deste ano? E qual mais?
+
+                                                                 Porcentagem     Porcentagem
+                                    Frequência    Porcentagem       válida        acumulativa
+Válido     3 Jerônimo (PT)                 10              ,7             3,9             3,9
+           4 João Roma (PL)              123              8,1            48,7            52,6
+           5 Kleber Rosa (PSOL)            70             4,6            27,8            80,4
+           6 Marcelo Millet (PCO)          49             3,2            19,6          100,0
+           Total                         253             16,6          100,0
+Omisso     0                            1273             83,4
+Total                                   1526            100,0
+
+
+rejeibad REJEIBA Em quais desses candidatos ____ você não votaria de jeito nenhum no primeiro
+          turno da eleição para governador do estado da Bahia deste ano? E qual mais?
+
+                                                                 Porcentagem     Porcentagem
+                                    Frequência    Porcentagem       válida        acumulativa
+Válido     4 João Roma (PL)                 1              ,1              ,5              ,5
+           5 Kleber Rosa (PSOL)          124              8,1            69,2            69,6
+           6 Marcelo Millet (PCO)          54             3,6            30,4          100,0
+           Total                         179             11,7          100,0
+Omisso     0                            1347             88,3
+Total                                   1526            100,0
+
+
+rejeibae REJEIBA Em quais desses candidatos ____ você não votaria de jeito nenhum no primeiro
+          turno da eleição para governador do estado da Bahia deste ano? E qual mais?
+
+                                                                 Porcentagem     Porcentagem
+                                    Frequência    Porcentagem       válida        acumulativa
+Válido     5 Kleber Rosa (PSOL)             1              ,1              ,7              ,7
+           6 Marcelo Millet (PCO)        121              7,9            99,3          100,0
+           Total                         122              8,0          100,0
+Omisso     0                            1404             92,0
+Total                                   1526            100,0
+
+
+                                                                                           Page 6
+segturbaa SEGTURBA Se o segundo turno da eleição para governador do estado da Bahia fosse
+             hoje e a disputa ficasse apenas entre ____ em quem você votaria ?
+
+                                                                        Porcentagem       Porcentagem
+                                        Frequência     Porcentagem         válida          acumulativa
+Válido   1 ACM Neto (UNIÃO)                  888              58,2             58,2              58,2
+         3 Jerônimo (PT)                     540              35,4             35,4              93,6
+         96 Em                                 60              4,0               4,0             97,6
+         branco/nulo/nenhum
+         99 Não sabe                           37              2,4               2,4            100,0
+         Total                              1526             100,0            100,0
+
+
+senaba SENABA No mês que vem também haverá eleição para senador. Se a eleição para senador
+           do estado da Bahia fosse hoje, em qual destes candidatos você votaria?
+
+                                                                        Porcentagem       Porcentagem
+                                        Frequência     Porcentagem         válida          acumulativa
+Válido   1 Cacá Leão (PP)                    283              18,5             18,5              18,5
+         2 Cicero Araujo (PCO)                 43              2,8               2,8             21,4
+         3 Doutora Raissa Soares             110               7,2               7,2             28,6
+         (PL)
+         4 Marcelo Barreto (PMN)               42              2,7               2,7             31,3
+         5 Otto Alencar (PSD)                620              40,7             40,7              72,0
+         6 Tâmara Azevedo (PSOL)               40              2,6               2,6             74,6
+
+         96 Em                               200              13,1             13,1              87,7
+         branco/nulo/nenhum
+         99 Não sabe                         187              12,3             12,3             100,0
+         Total                              1526             100,0            100,0
+
+
+  p1 P.1 O presidente Jair Bolsonaro está completando três anos e nove meses de
+governo. Na sua opinião o presidente Jair Bolsonaro está fazendo um governo ótimo,
+                           bom, regular, ruim ou péssimo?
+
+                                                           Porcentagem      Porcentagem
+                           Frequência    Porcentagem          válida         acumulativa
+Válido   1 Ótimo                 132                 8,6              8,6               8,6
+         2 Bom                   183                12,0             12,0              20,7
+         3 REGULAR               345                22,6             22,6              43,2
+         4 Ruim                  182                11,9             11,9              55,2
+         5 Péssimo               653                42,8             42,8              97,9
+         99 Não sabe              31                 2,1              2,1         100,0
+         Total                  1526            100,0            100,0
+
+
+
+
+                                                                                                  Page 7
+p2 P.2 O governador Rui Costa está completando sete anos e nove meses de governo.
+                Na sua opinião Rui Costa está fazendo um governo:
+
+                                                            Porcentagem      Porcentagem
+                           Frequência      Porcentagem         válida         acumulativa
+Válido   1 Ótimo                  302                19,8             19,8             19,8
+         2 Bom                    434                28,5             28,5             48,3
+         3 REGULAR                482                31,6             31,6             79,9
+         4 Ruim                    96                 6,3              6,3             86,1
+         5 Péssimo                158                10,4             10,4             96,5
+         99 Não sabe               54                 3,5              3,5            100,0
+         Total                 1526                 100,0            100,0
+
+
+p5a P.5 Na sua opinião, qual destes candidatos a governador é - o que, se eleito, mais defenderá
+                                            os ricos
+
+                                                                        Porcentagem      Porcentagem
+                                        Frequência     Porcentagem         válida         acumulativa
+Válido   1 ACM Neto (UNIÃO)                  483              31,7             31,7             31,7
+         2 Giovani Damico (PCB)                36              2,3              2,3             34,0
+         3 Jerônimo (PT)                     203              13,3             13,3             47,3
+         4 João Roma (PL)                    276              18,1             18,1             65,4
+         5 Kleber Rosa (PSOL)                  33              2,1              2,1             67,5
+         6 Marcelo Millet (PCO)                47              3,0              3,0             70,6
+         95 Todos                              22              1,5              1,5             72,0
+         96 Nenhum                             48              3,1              3,1             75,2
+         99 Não sabe                         379              24,8             24,8            100,0
+         Total                              1526             100,0            100,0
+
+
+p5b P.5 Na sua opinião, qual destes candidatos a governador é - o que faz mais promessas que
+                                      não pode cumprir
+
+                                                                        Porcentagem      Porcentagem
+                                        Frequência     Porcentagem         válida         acumulativa
+Válido   1 ACM Neto (UNIÃO)                  251              16,5             16,5             16,5
+         2 Giovani Damico (PCB)                40              2,6              2,6             19,1
+         3 Jerônimo (PT)                     302              19,8             19,8             38,8
+         4 João Roma (PL)                    267              17,5             17,5             56,3
+         5 Kleber Rosa (PSOL)                  75              4,9              4,9             61,2
+         6 Marcelo Millet (PCO)                52              3,4              3,4             64,6
+         95 Todos                            151               9,9              9,9             74,5
+         96 Nenhum                             21              1,4              1,4             75,9
+         99 Não sabe                         368              24,1             24,1            100,0
+         Total                              1526             100,0            100,0
+
+
+
+
+                                                                                                   Page 8
+         p5c P.5 Na sua opinião, qual destes candidatos a governador é - o mais inteligente
+
+                                                                    Porcentagem     Porcentagem
+                                     Frequência    Porcentagem         válida        acumulativa
+Válido    1 ACM Neto (UNIÃO)               849              55,6            55,6               55,6
+          2 Giovani Damico (PCB)             10               ,7               ,7              56,3
+          3 Jerônimo (PT)                  281              18,4            18,4               74,7
+          4 João Roma (PL)                   94              6,1              6,1              80,8
+          5 Kleber Rosa (PSOL)               11               ,7               ,7              81,5
+          6 Marcelo Millet (PCO)             14               ,9               ,9              82,5
+          95 Todos                           23              1,5              1,5              84,0
+          96 Nenhum                          34              2,2              2,2              86,2
+          99 Não sabe                      211              13,8            13,8              100,0
+          Total                           1526            100,0            100,0
+
+
+         p5d P.5 Na sua opinião, qual destes candidatos a governador é - o mais indeciso
+
+                                                                    Porcentagem     Porcentagem
+                                     Frequência    Porcentagem         válida        acumulativa
+Válido    1 ACM Neto (UNIÃO)               197              12,9            12,9               12,9
+          2 Giovani Damico (PCB)             93              6,1              6,1              19,0
+          3 Jerônimo (PT)                  258              16,9            16,9               35,9
+          4 João Roma (PL)                 250              16,4            16,4               52,3
+          5 Kleber Rosa (PSOL)             131               8,6              8,6              60,9
+          6 Marcelo Millet (PCO)             98              6,4              6,4              67,3
+          95 Todos                           17              1,1              1,1              68,4
+          96 Nenhum                          35              2,3              2,3              70,7
+          99 Não sabe                      447              29,3            29,3              100,0
+          Total                           1526            100,0            100,0
+
+
+         p5e P.5 Na sua opinião, qual destes candidatos a governador é - o mais realizador
+
+                                                                    Porcentagem     Porcentagem
+                                     Frequência    Porcentagem         válida        acumulativa
+Válido    1 ACM Neto (UNIÃO)               836              54,8            54,8               54,8
+          2 Giovani Damico (PCB)              6               ,4               ,4              55,1
+          3 Jerônimo (PT)                  311              20,4            20,4               75,5
+          4 João Roma (PL)                   62              4,1              4,1              79,5
+          5 Kleber Rosa (PSOL)                8               ,5               ,5              80,1
+          6 Marcelo Millet (PCO)             14               ,9               ,9              81,0
+          95 Todos                            2               ,1               ,1              81,1
+          96 Nenhum                          57              3,7              3,7              84,8
+          99 Não sabe                      232              15,2            15,2              100,0
+          Total                           1526            100,0            100,0
+
+
+
+
+                                                                                                 Page 9
+         p5f P.5 Na sua opinião, qual destes candidatos a governador é - o mais autoritário
+
+                                                                    Porcentagem      Porcentagem
+                                     Frequência    Porcentagem         válida         acumulativa
+Válido    1 ACM Neto (UNIÃO)                601             39,4             39,4              39,4
+          2 Giovani Damico (PCB)             18              1,2              1,2              40,6
+          3 Jerônimo (PT)                   205             13,4             13,4              54,0
+          4 João Roma (PL)                  172             11,3             11,3              65,3
+          5 Kleber Rosa (PSOL)               35              2,3              2,3              67,6
+          6 Marcelo Millet (PCO)             42              2,8              2,8              70,3
+          95 Todos                           11               ,7               ,7              71,1
+          96 Nenhum                          57              3,8              3,8              74,8
+          99 Não sabe                       384             25,2             25,2             100,0
+          Total                           1526             100,0           100,0
+
+
+   p5g P.5 Na sua opinião, qual destes candidatos a governador é - o mais moderno e inovador
+
+                                                                    Porcentagem      Porcentagem
+                                     Frequência    Porcentagem         válida         acumulativa
+Válido    1 ACM Neto (UNIÃO)                773             50,6             50,6              50,6
+          2 Giovani Damico (PCB)             14               ,9               ,9              51,6
+          3 Jerônimo (PT)                   279             18,3             18,3              69,9
+          4 João Roma (PL)                  113              7,4              7,4              77,3
+          5 Kleber Rosa (PSOL)               18              1,2              1,2              78,5
+          6 Marcelo Millet (PCO)             20              1,3              1,3              79,8
+          95 Todos                            4               ,3               ,3              80,1
+          96 Nenhum                          33              2,2              2,2              82,3
+          99 Não sabe                       270             17,7             17,7             100,0
+          Total                           1526             100,0           100,0
+
+
+
+p5h P.5 Na sua opinião, qual destes candidatos a governador é - o que, se eleito, mais defenderá
+                                          os pobres
+
+                                                                    Porcentagem      Porcentagem
+                                     Frequência    Porcentagem         válida         acumulativa
+Válido    1 ACM Neto (UNIÃO)                623             40,9             40,9              40,9
+          2 Giovani Damico (PCB)              5               ,3               ,3              41,2
+          3 Jerônimo (PT)                   499             32,7             32,7              73,9
+          4 João Roma (PL)                   98              6,4              6,4              80,3
+          5 Kleber Rosa (PSOL)                8               ,5               ,5              80,8
+          6 Marcelo Millet (PCO)             14               ,9               ,9              81,7
+          95 Todos                            6               ,4               ,4              82,1
+          96 Nenhum                          91              5,9              5,9              88,0
+          99 Não sabe                       183             12,0             12,0             100,0
+          Total                           1526             100,0           100,0
+
+
+
+
+                                                                                                Page 10
+          p5i P.5 Na sua opinião, qual destes candidatos a governador é - mais sincero
+
+                                                                  Porcentagem      Porcentagem
+                                     Frequência    Porcentagem       válida         acumulativa
+Válido   1 ACM Neto (UNIÃO)               621             40,7            40,7            40,7
+         2 Giovani Damico (PCB)             10              ,7               ,7           41,3
+         3 Jerônimo (PT)                  371             24,3            24,3            65,7
+         4 João Roma (PL)                 108              7,1             7,1            72,8
+         5 Kleber Rosa (PSOL)                8              ,6               ,6           73,3
+         6 Marcelo Millet (PCO)             11              ,7               ,7           74,1
+         95 Todos                            2              ,1               ,1           74,2
+         96 Nenhum                        183             12,0            12,0            86,2
+         99 Não sabe                      210             13,8            13,8           100,0
+         Total                           1526            100,0           100,0
+
+
+   p6 P.6 Alguma vez em época de eleições você recebeu alguma oferta de dinheiro, favor ou
+               benefício para votar em determinado candidato? Você aceitou?
+
+                                                                   Porcentagem      Porcentagem
+                                      Frequência    Porcentagem       válida         acumulativa
+Válido   1 recebeu a oferta e                38             2,5              2,5              2,5
+         aceitou
+         2 recebeu a oferta e                83             5,5              5,5              8,0
+         não aceitou
+         3 Nunca recebeu essa              1405            92,0             92,0           100,0
+         oferta
+         Total                             1526           100,0            100,0
+
+
+    p7 P.7 E, na sua opinião, os brasileiros, de modo geral, se, durante a época de eleições,
+ recebessem uma oferta de dinheiro, favor ou algum outro benefício para votar em determinado
+                                  candidato, aceitariam ou não?
+
+                                                                   Porcentagem      Porcentagem
+                                      Frequência    Porcentagem       válida         acumulativa
+Válido   1 Sim, aceitariam                  970            63,6             63,6             63,6
+         2 Não aceitariam                   451            29,6             29,6             93,1
+         99 Não sabe se aceitariam          105             6,9              6,9           100,0
+
+         Total                             1526           100,0            100,0
+
+
+
+
+                                                                                           Page 11
+                         p8 P.8 Qual é o time de futebol de sua preferência?
+
+                                                                           Porcentagem       Porcentagem
+                                       Frequência     Porcentagem             válida          acumulativa
+Válido   1 Bahia                             288               18,9               18,9              18,9
+         2 Vitória                           157               10,3               10,3              29,2
+         4 Botafogo (BA)                      11                    ,7                  ,7          29,9
+         6 Flamengo                          366               24,0               24,0              53,8
+         7 Corinthians                       134                8,8                8,8              62,7
+         8 Selecao Brasileira/                34                2,2                2,2              64,9
+         Brasil
+         9 Vasco da Gama                      63                4,1                4,1              69,0
+         10 Palmeiras                         98                6,4                6,4              75,4
+         11 Santos                            11                    ,7                  ,7          76,1
+         12 Sao Paulo                         63                4,1                4,1              80,2
+         14 Fluminense                           8                  ,5                  ,5          80,8
+         96 Nenhum                           261               17,1               17,1              97,9
+         98 Outros                            32                2,1                2,1             100,0
+         Total                              1526              100,0              100,0
+
+
+                       p9 P.9 Você tem acesso à internet ?
+
+                                                     Porcentagem         Porcentagem
+                     Frequência   Porcentagem           válida            acumulativa
+Válido   1 Sim           1273             83,4               83,4               83,4
+         2 Não             253            16,6               16,6              100,0
+         Total           1526            100,0             100,0
+
+
+
+
+                                                                                                    Page 12
+    pea PEA. Atualmente, você trabalha? Qual é a sua ocupação principal? Você só estuda, é
+    aposentado, é dona-de-casa ou está desempregado? Está procurando emprego ou não ?
+
+                                                                  Porcentagem     Porcentagem
+                                    Frequência    Porcentagem        válida        acumulativa
+Válido   1 Assalariado registrado         194             12,7            12,7               12,7
+
+         2 Assalariado sem                128              8,4             8,4               21,1
+         registro
+         3 Funcionario público             99              6,5             6,5               27,6
+         4 Autônomo regular               128              8,4             8,4               36,0
+         5 Profissional liberal              9              ,6              ,6               36,6
+         6 Empresário                      35              2,3             2,3               38,8
+         7 Free-lance/ bico               203             13,3            13,3               52,1
+         8 Estagiário/ aprendiz            18              1,2             1,2               53,3
+         9 Outros                         107              7,0             7,0               60,4
+         10 Desempregado                  155             10,2            10,2               70,5
+         (Procura emprego)
+         11 Dona de casa                  128              8,4             8,4               79,0
+         12 Aposentado                    184             12,1            12,1               91,0
+         13 Estudante                      50              3,3             3,3               94,3
+         14 Vive de rendas                   3              ,2              ,2               94,5
+         15 Outros                         18              1,2             1,2               95,7
+         16 Desempregado (Não              65              4,3             4,3           100,0
+         procura emprego)
+         Total                           1526            100,0           100,0
+
+
+
+
+                                                                                             Page 13
+                    partido PARTIDO. Qual é o seu partido político de preferência?
+
+                                                                             Porcentagem      Porcentagem
+                                      Frequência         Porcentagem            válida         acumulativa
+Válido   1 PMDB/MDB                           15                 1,0                 1,0              1,0
+         2 PT                                607                39,8                39,8             40,7
+         3 PP/ PROGRESSISTAS                   5                  ,3                  ,3             41,1
+         4 PSDB                               11                  ,7                  ,7             41,8
+         5 PTB                                 2                  ,1                  ,1             41,9
+         7 PDT                                 7                  ,4                  ,4             42,4
+         8 PSB                                 6                  ,4                  ,4             42,8
+         9 DEM                                20                 1,3                 1,3             44,1
+         10 PSOL                               4                  ,2                  ,2             44,3
+         14 PV                                 1                  ,1                  ,1             44,4
+         15 PSD                                6                  ,4                  ,4             44,8
+         18 PSL                                3                  ,2                  ,2             45,0
+         19 REDE                               1                  ,1                  ,1             45,0
+         20 PCdoB                              1                  ,1                  ,1             45,1
+         21 PRB/ REPUBLICANOS                  2                  ,1                  ,1             45,2
+         23 PODEMOS                            1                  ,1                  ,1             45,3
+         24 PARTIDO NOVO                       5                  ,3                  ,3             45,6
+         26 PL                                41                 2,7                 2,7             48,3
+         27 UNIÃO                              7                  ,5                  ,5             48,7
+         95 Nomes e referências              205                13,4                13,4             62,1
+         96 Nenhum/ não tem                  569                37,3                37,3             99,5
+         98 Outro partido                      8                  ,5                  ,5            100,0
+         Total                              1526               100,0               100,0
+
+
+         cor COR. Considerando as seguintes categorias, qual é a sua cor:
+
+                                                           Porcentagem         Porcentagem
+                         Frequência    Porcentagem            válida            acumulativa
+Válido   1 Branca              207             13,5               13,5                13,5
+         2 Preta               415             27,2               27,2                40,8
+         3 Parda               751             49,2               49,2                89,9
+         4 Amarela              35                 2,3                 2,3            92,2
+         5 Indígena             43                 2,8                 2,8            95,0
+         98 Outras              76                 5,0                 5,0           100,0
+         Total                1526            100,0              100,0
+
+
+
+
+                                                                                                     Page 14
+                        RELIGIAO RELIGIÃO1. Qual a sua religião?
+
+                                                             Porcentagem   Porcentagem
+                                Frequência   Porcentagem        válida      acumulativa
+Válido   1 Adventista                  22             1,4            1,4           1,4
+         2 Budismo                       2              ,1            ,1           1,6
+                                       25             1,6            1,6           3,2
+
+
+
+
+                                                                                  Page 15
+                               RELIGIAO RELIGIÃO1. Qual a sua religião?
+Válido                                                              Porcentagem   Porcentagem
+                                       Frequência   Porcentagem        válida      acumulativa
+         3 Candomblé                          25             1,6            1,6           3,2
+         4 Católica                          812            53,2           53,2          56,4
+         5 Espírita | Kardecista              19             1,2            1,2          57,6
+         10 Mórmon / Igreja de                  1              ,1            ,1          57,7
+         Jesus Cristo dos Santos
+         dos Últimos Dias
+         11 Testemunha de Jeová               11               ,7            ,7          58,4
+
+         12 Umbanda                             6              ,4            ,4          58,8
+         62 Igreja Evangélica                   7              ,5            ,5          59,3
+         Presbiteriana
+         63 Igreja Evangélica                   1              ,1            ,1          59,4
+         Metodista
+         64 Igreja Evangélica                 98             6,4            6,4          65,8
+         Batista
+         65 Igreja Universal do               25             1,7            1,7          67,4
+         Reino de Deus (IURD)
+         66 Igreja Internacional da             6              ,4            ,4          67,8
+         Graça de Deus
+         69 Igreja Mundial do                   8              ,5            ,5          68,3
+         Poder de Deus
+         71 Igreja Assembleia de             101             6,6            6,6          75,0
+         Deus
+         72 Igreja Deus é Amor                  3              ,2            ,2          75,2
+         73 Igreja do Evangelho                 8              ,5            ,5          75,7
+         Quadrangular
+         74 Igreja Congregação                13               ,9            ,9          76,6
+         Cristã do Brasil
+         75 Igreja Maranata                     2              ,1            ,1          76,7
+         77 Pentecostal s/esp.                20             1,3            1,3          78,0
+         96 NÃO TEM RELIGIÃO/                195            12,8           12,8          90,8
+         SEM RELIGIÃO
+         98 Outras religiões                  65             4,3            4,3          95,1
+         99 NÃO SABE/NÃO                        5              ,3            ,3          95,5
+         LEMBRA
+         100 Protestante s/esp.                 8              ,5            ,5          96,0
+         951 Não está                         12               ,8            ,8          96,7
+         frequentando nenhuma
+         igreja atualmente/
+         Evangélicos sem
+         especificar
+         981 Outras igrejas                   46             3,0            3,0          99,7
+         evangélicas
+         991 Não sabe/ não lembra               4              ,3            ,3         100,0
+         (evangélica)
+         Total                              1526           100,0          100,0
+
+
+
+                                                                                         Page 16
+                       escola ESCOLA. Até que ano da escola você estudou?
+
+                                                                   Porcentagem      Porcentagem
+                                     Frequência    Porcentagem        válida         acumulativa
+Válido   1 Analfabeto/ primario            170             11,2             11,2            11,2
+         incompleto
+         2 Primario completo/              229             15,0             15,0            26,2
+         Ginasial incompleto
+         3 Ginasial completo               124              8,1              8,1            34,3
+         4 Colegial incompleto             171             11,2             11,2            45,5
+         5 Colegial completo               618             40,5             40,5            86,0
+         6 Superior incompleto              60              3,9              3,9            89,9
+         7 Superior completo               120              7,9              7,9            97,8
+         8 Pós graduação                    34              2,2              2,2           100,0
+         Total                            1526            100,0            100,0
+
+
+rendaf RENDAF. Somando a sua renda com a renda das pessoas que moram com você, quanto é
+                     aproximadamente a renda familiar na sua casa?
+
+                                                                   Porcentagem      Porcentagem
+                                     Frequência    Porcentagem        válida         acumulativa
+Válido   1 De R$ 1.213,00 até R$           336             22,0             22,0            22,0
+         2.424,00
+         2 De R$ 2.425,00 até R$           191             12,5             12,5            34,6
+         3.636,00
+         3 De R$ 3.637,00 até R$           134              8,8              8,8            43,3
+         6.060,00
+         4 De R$ 6.061,00 até R$            61              4,0              4,0            47,3
+         12.120,00
+         5 De R$ 12.121,00 até R$           19              1,2              1,2            48,5
+         24.240,00
+         6 De R$ 24.241,00 até R$             5               ,3              ,3            48,9
+         60.600,00
+         9 Até R$ 1.212,00                 686             45,0             45,0            93,9
+         97 Recusa                          13                ,8              ,8            94,7
+         99 Não sabe                        81              5,3              5,3           100,0
+         Total                            1526            100,0            100,0
+
+
+     orientacao ORIENTAÇÃO. Para finalizar, em relação à orientação sexual, você diria que é:
+
+                                                                   Porcentagem      Porcentagem
+                                     Frequência    Porcentagem        válida         acumulativa
+Válido   1 Heterossexual                  1232             80,7             80,7            80,7
+         2 Homossexual                      49              3,2              3,2            83,9
+         3 Bissexual                        38              2,5              2,5            86,4
+         97 Recusa/ Não                     87              5,7              5,7            92,2
+         respondeu
+         98 Outros                          60              3,9              3,9            96,1
+         99 Não sabe                        59              3,9              3,9           100,0
+         Total                            1526            100,0            100,0
+
+                                                                                            Page 17
+                                   METROP Natureza do Município
+
+                                                                       Porcentagem    Porcentagem
+                                       Frequência      Porcentagem        válida       acumulativa
+Válido   1 Capital                             266            17,4             17,4          17,4
+         2 Outros municípios da                104             6,8              6,8          24,2
+         Região Metropolitana
+         3 Interior                           1156            75,8             75,8         100,0
+         Total                                1526           100,0            100,0
+
+
+                                      IDADE
+
+                                                     Porcentagem     Porcentagem
+                      Frequência   Porcentagem          válida        acumulativa
+Válido   16                  16            1,0               1,0             1,0
+         17                  17            1,1               1,1             2,2
+         18                  19            1,3               1,3             3,4
+         19                  27            1,8               1,8             5,2
+         20                  25            1,6               1,6             6,8
+         21                  26            1,7               1,7             8,5
+         22                  34            2,2               2,2            10,7
+         23                  31            2,1               2,1            12,8
+         24                  32            2,1               2,1            14,9
+         25                  37            2,4               2,4            17,3
+         26                  30            2,0               2,0            19,3
+         27                  32            2,1               2,1            21,4
+         28                  27            1,8               1,8            23,2
+         29                  31            2,1               2,1            25,2
+         30                  26            1,7               1,7            26,9
+         31                  26            1,7               1,7            28,7
+         32                  39            2,6               2,6            31,2
+         33                  27            1,8               1,8            33,0
+         34                  26            1,7               1,7            34,7
+         35                  38            2,5               2,5            37,2
+         36                  20            1,3               1,3            38,5
+         37                  40            2,6               2,6            41,1
+         38                  34            2,3               2,3            43,3
+         39                  19            1,2               1,2            44,6
+         40                  38            2,5               2,5            47,1
+         41                  30            1,9               1,9            49,0
+         42                  38            2,5               2,5            51,5
+         43                  30            2,0               2,0            53,5
+         44                  44            2,9               2,9            56,4
+         45                  39            2,6               2,6            59,0
+         46                  27            1,7               1,7            60,7
+         47                  19            1,3               1,3            62,0
+         48                  26            1,7               1,7            63,7
+                             26            1,7               1,7            65,4
+                                                                                             Page 18
+                        IDADE
+
+                                     Porcentagem   Porcentagem
+        Frequência   Porcentagem        válida      acumulativa
+49             26            1,7             1,7          65,4
+50             24            1,6             1,6          67,0
+51             29            1,9             1,9          68,9
+52             29            1,9             1,9          70,7
+53             24            1,6             1,6          72,4
+54             18            1,2             1,2          73,5
+55             28            1,8             1,8          75,3
+56             19            1,3             1,3          76,6
+57             16            1,0             1,0          77,6
+58             24            1,6             1,6          79,2
+59             18            1,1             1,1          80,3
+60             34            2,2             2,2          82,5
+61             26            1,7             1,7          84,2
+62             38            2,5             2,5          86,7
+63             14               ,9            ,9          87,7
+64             15            1,0             1,0          88,7
+65             15            1,0             1,0          89,6
+66             16            1,1             1,1          90,7
+67             14               ,9            ,9          91,7
+68             12               ,8            ,8          92,4
+69             11               ,7            ,7          93,1
+70             16            1,1             1,1          94,2
+71             14               ,9            ,9          95,1
+72             11               ,7            ,7          95,8
+73              9               ,6            ,6          96,4
+74              5               ,3            ,3          96,7
+75              7               ,5            ,5          97,2
+76              4               ,2            ,2          97,4
+77              7               ,4            ,4          97,9
+78              3               ,2            ,2          98,1
+79              5               ,3            ,3          98,4
+80              8               ,5            ,5          98,9
+82              8               ,5            ,5          99,5
+83              2               ,1            ,1          99,6
+84              1               ,1            ,1          99,7
+85              2               ,1            ,1          99,8
+86              2               ,1            ,1          99,9
+89              1               ,1            ,1         100,0
+Total       1526           100,0           100,0
+
+
+
+
+                                                                  Page 19
+
